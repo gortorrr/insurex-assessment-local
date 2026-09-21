@@ -20,5 +20,5 @@ Key definitions:
 ## วิธีเปิด
 
 1. เปิด `InsureX_Analysis.pbip` ด้วย Power BI Desktop
-2. ตรวจ parameter `DataRoot` ให้ชี้ไปที่ root ของ repository
+2. ตรวจ parameter `DataRoot` ให้ชี้ไปที่ root ของ repository (Home → Transform data → Manage Parameters เปลี่ยน Current Value เป็น root ของ repository)
 3. กด **Home > Refresh** และบันทึกโปรเจกต์
