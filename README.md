@@ -119,7 +119,7 @@ RAG ใช้ E5 Query/Passage Prefixes, Chroma Persistent Collection และ 
 
 ## สถานะ
 
-ผลตรวจ: 146 Unit/Integration Tests ผ่าน, Requirement Verifier แบบ Isolated ผ่าน, Retrieval ชุดเดิม 30/30 และ Held-out-v2 20/20 ผ่าน, PDF 5 ฉบับรวม 14 หน้าและมี SHA-256 ตรงตาม Manifest ส่วน ChromaDB มี 31 Chunks
+ผลตรวจล่าสุด: 147 Unit/Integration Tests ผ่าน, Requirement Verifier แบบ Isolated ผ่าน, Retrieval ชุดเดิม 30/30 และ Held-out-v2 20/20 ผ่าน, PDF 5 ฉบับรวม 14 หน้าและมี SHA-256 ตรงตาม Manifest ส่วน ChromaDB มี 31 Chunks
 
 ## วิธีสาธิต Lead และ Session
 
