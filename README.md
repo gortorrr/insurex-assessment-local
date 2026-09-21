@@ -32,6 +32,10 @@ Joined Date, Inactive Date, Incomplete Month, Missing Calendar Month และ C
 รันคำสั่งจากโฟลเดอร์หลักของโปรเจกต์:
 
 ```powershell
+# ดาวน์โหลดไฟล์ Local Embedding Model ที่จัดเก็บผ่าน Git LFS
+git lfs install
+git lfs pull
+
 # สร้าง Virtual Environment
 python -m venv .venv
 
@@ -42,11 +46,21 @@ python -m venv .venv
 Copy-Item .env.example .env
 ```
 
-แก้ไขไฟล์ `.env` และกำหนดค่าต่อไปนี้สำหรับการใช้ Gemini จริง:
+แก้ไขไฟล์ `.env` และกำหนด Gemini API key:
 
 ```env
-GOOGLE_API_KEY=ใส่_API_KEY
+GOOGLE_API_KEY=ใส่_API_KEY_ของผู้รัน
 ```
+
+GitHub repository ไม่ได้เก็บ `rag/chroma_db/` เนื่องจากเป็น generated artifact จึงต้องสร้าง Vector Database หนึ่งครั้งก่อนเปิด Web App:
+
+```powershell
+.venv\Scripts\python.exe -X utf8 -m scripts.ingest_rag
+```
+
+คำสั่ง ingest จะอ่าน active PDF ทั้ง 5 ฉบับและ corrected extraction จาก manifest จากนั้นสร้าง persistent Chroma index ที่ `rag/chroma_db/`
+
+ระบบตรวจ PDF hash, corrected extraction, embedding model revision และ chunk configuration แบบ fail closed หากไฟล์ไม่ตรงกับ manifest หรือ index สร้างไม่สมบูรณ์ ระบบจะหยุดแทนการตอบจากข้อมูลเก่า
 
 สร้างบัญชีตัวอย่างสำหรับทดสอบระบบ Multi-user:
 
@@ -57,29 +71,31 @@ GOOGLE_API_KEY=ใส่_API_KEY
 เปิด Web App:
 
 ```powershell
-.venv\Scripts\python.exe -X utf8 -m streamlit run rag/ui/app.py
+.venv\Scripts\python.exe -X utf8 -m streamlit run rag/ui/app.py --server.port 8513
 ```
 
-## คำสั่งเพิ่มเติมสำหรับสร้างข้อมูลและตรวจสอบระบบ
+จากนั้นเปิด:
 
-คำสั่งต่อไปนี้ไม่จำเป็นต้องรันก่อนเปิด Web App
+```text
+http://localhost:8513/
+```
+
+## คำสั่งเพิ่มเติมสำหรับตรวจสอบระบบ
+
+คำสั่งต่อไปนี้ไม่จำเป็นต้องรันก่อนเปิด Web App แต่ใช้ตรวจสอบความถูกต้องของระบบ:
 
 ```powershell
-# สร้าง Vector Database ใหม่จาก PDF
-# ใช้เมื่อยังไม่มี ChromaDB หรือมีการเปลี่ยนเอกสาร
-.venv\Scripts\python.exe -X utf8 -m scripts.ingest_rag
-
 # ตรวจ Unit และ Integration Tests
 .venv\Scripts\python.exe -X utf8 -m unittest discover -s tests -q
 
 # ประเมิน Retrieval แบบ Offline โดยไม่เรียก Gemini
 .venv\Scripts\python.exe -X utf8 scripts\evaluate_rag_offline.py
 
-# ทดสอบ Flow และสร้างหลักฐาน Demo
+# ทดสอบ LangGraph, Lead Collection และ Session Flow
 .venv\Scripts\python.exe -X utf8 -m scripts.local_e2e
 ```
 
-ชุดส่งแบบโฟลเดอร์มี active PDF 5 ฉบับ, corrected extraction, local embedding model และ Chroma index 31 chunks ตาม manifest จึงเปิดตรวจ retrieval ได้โดยไม่ต้องดาวน์โหลดโมเดลเพิ่ม สามารถรัน `python -X utf8 -m scripts.ingest_rag` เพื่อยืนยัน index ซ้ำได้ การ ingest จะ fail closed หาก PDF, corrected extraction, model revision หรือ hash ไม่ตรง manifest
+Repository มี active PDF 5 ฉบับรวม 14 หน้า, corrected extraction และ local multilingual E5 embedding model ตาม manifest โดยไฟล์ model ขนาดใหญ่จัดเก็บผ่าน Git LFS หลังรัน ingest สำเร็จ ChromaDB ควรมี 31 chunks ตาม ingestion configuration ปัจจุบัน
 
 ## Architecture และ LangGraph
 
