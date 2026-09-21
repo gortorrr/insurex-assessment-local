@@ -1,1 +1,4 @@
 * text=auto
+
+# Model manifest hashes require deterministic LF bytes.
+rag/models/multilingual-e5-small/** text eol=lf
