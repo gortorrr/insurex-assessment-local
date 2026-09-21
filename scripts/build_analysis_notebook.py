@@ -3,17 +3,14 @@
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
 import nbformat
 from nbclient import NotebookClient
-from nbconvert import HTMLExporter
 
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTEBOOK = ROOT / "analysis" / "notebooks" / "insurex_analysis.ipynb"
-HTML_REPORT = ROOT / "analysis" / "notebooks" / "insurex_analysis.html"
 
 
 def markdown(text: str) -> dict:
@@ -395,26 +392,10 @@ if errors:
     raise RuntimeError(f"notebook execution produced {len(errors)} error output(s)")
 nbformat.write(executed, NOTEBOOK)
 
-html, _ = HTMLExporter().from_notebook_node(executed)
-# The default nbconvert template references RequireJS and MathJax CDNs even
-# though this notebook uses neither. Remove remote script tags so reviewers can
-# open the deliverable without network access.
-html = re.sub(
-    r'<script\b[^>]*\bsrc=["\']https?://[^"\']+["\'][^>]*>\s*</script>',
-    "",
-    html,
-    flags=re.IGNORECASE,
-)
-HTML_REPORT.write_text(html, encoding="utf-8")
-if re.search(r'<script\b[^>]*\bsrc=["\']https?://', html, flags=re.IGNORECASE):
-    raise RuntimeError("HTML export still depends on a remote script")
-
 print({
     "notebook": str(NOTEBOOK),
-    "html": str(HTML_REPORT),
     "cells": len(cells),
     "markdown_cells": sum(c["cell_type"] == "markdown" for c in cells),
     "code_cells": sum(c["cell_type"] == "code" for c in cells),
     "execution_errors": len(errors),
-    "offline_html": True,
 })

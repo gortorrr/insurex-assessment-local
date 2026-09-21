@@ -1,5 +1,4 @@
 import json
-import re
 import unittest
 from pathlib import Path
 
@@ -16,7 +15,7 @@ class AnalysisArtifactContractTests(unittest.TestCase):
             if cell.get("cell_type") == "markdown"
         )
         self.assertGreaterEqual(len([c for c in notebook["cells"] if c.get("cell_type") == "markdown"]), 4)
-        self.assertIn("คำถาม", markdown)
+        self.assertIn("Explore and describe key information from the datasets", markdown)
         self.assertIn("ข้อจำกัด", markdown)
         self.assertNotIn("????", markdown)
         source = "".join("".join(cell.get("source", [])) for cell in notebook["cells"] if cell.get("cell_type") == "code")
@@ -34,14 +33,6 @@ class AnalysisArtifactContractTests(unittest.TestCase):
             if output.get("output_type") == "error"
         ]
         self.assertEqual(errors, [])
-
-    def test_html_matches_current_notebook_and_is_self_contained(self):
-        html = (ROOT / "analysis/notebooks/insurex_analysis.html").read_text(encoding="utf-8")
-        self.assertIn("Explore and describe key information from the datasets", html)
-        self.assertNotIn('src="https://cdn.plot.ly', html)
-        self.assertNotIn("src='https://cdn.plot.ly", html)
-        self.assertIn("plotly.js v", html)
-        self.assertIsNone(re.search(r'<script\b[^>]*\bsrc=["\']https?://', html, flags=re.IGNORECASE))
 
     def test_aggregates_and_powerbi_use_same_acceptance_contract(self):
         aggregate = json.loads((ROOT / "analysis/data/derived/analysis_aggregates.json").read_text(encoding="utf-8"))

@@ -116,7 +116,6 @@ def main() -> None:
         "requirements.txt",
         ".env.example",
         "analysis/notebooks/insurex_analysis.ipynb",
-        "analysis/notebooks/insurex_analysis.html",
         "analysis/powerbi/InsureX_Analysis.pbip",
         "data_modeling/db/analytics.sqlite",
         "rag/ui/app.py",
