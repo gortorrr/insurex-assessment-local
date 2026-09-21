@@ -1,0 +1,184 @@
+{
+  "executed_at": "2026-09-19T22:38:34.867734+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "Google AI Studio through LangChain",
+  "cases": [
+    {
+      "product_id": "khum-talodcheep-ci-plus",
+      "question": "ซีไอ พลัสคุ้มครองผู้เอาประกันถึงอายุเท่าไร",
+      "answer": "### ระยะเวลาความคุ้มครองของซีไอ พลัส\n\nแบบประกันคุ้มตลอดชีพ ซีไอ พลัส ให้ความคุ้มครองผู้เอาประกันถึงอายุ 90 ปี\n\n- **ระยะเวลาคุ้มครอง:** คุ้มครองนานถึงอายุ 90 ปี หรือจนถึงวันครบรอบปีกรมธรรม์ที่ผู้เอาประกันภัยมีอายุครบ 90 ปี",
+      "expected_facts": [
+        "90"
+      ],
+      "expected_facts_present": true,
+      "used_raw_fallback": false,
+      "citations": [
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 3,
+          "chunk_id": "insurex-khum-talodcheep-ci-plus-p3-c0",
+          "source_url": "https://cdn.scbprotect.co.th/11_SCB-InsureX_Khum-Talodcheep-CI-Plus_90-5_90-10_90-20_180669.pdf"
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "chunk_id": "insurex-khum-talodcheep-ci-plus-p1-c1",
+          "source_url": "https://cdn.scbprotect.co.th/11_SCB-InsureX_Khum-Talodcheep-CI-Plus_90-5_90-10_90-20_180669.pdf"
+        }
+      ],
+      "evidence_status": "sufficient",
+      "error_code": null,
+      "passed": true
+    },
+    {
+      "product_id": "khum-talodcheep-plus",
+      "question": "คุ้มตลอดชีพ พลัสมีระยะเวลาที่ไม่คุ้มครองกี่วันบ้าง",
+      "answer": "### ระยะเวลาที่ไม่คุ้มครองของคุ้มตลอดชีพ พลัส\n\nคุ้มตลอดชีพ พลัส มีระยะเวลาที่ไม่คุ้มครอง (Waiting period) สำหรับผลประโยชน์ต่างๆ ดังนี้:\n\n- **การเจ็บป่วยใดๆ:** 30 วัน\n- **โรคมะเร็งระยะลุกลาม:** 90 วัน\n- **ผลประโยชน์ค่าชดเชยสำหรับ 3 โรคร้ายแรง:** 90 วัน\n- **ค่ารักษาแพทย์ทางเลือก:** 120 วัน\n- **ค่ารักษาภาวะแทรกซ้อนขณะตั้งครรภ์และหลังคลอด, เนื้องอก ถุงน้ำ หรือมะเร็งทุกชนิด (ยกเว้น มะเร็งระยะลุกลาม), ริดสีดวงทวาร, ไส้เลื่อนทุกชนิด, ต้อเนื้อหรือต้อกระจก, การตัดทอนซิลหรืออดีนอยด์, นิ่วทุกชนิด, เส้นเลือดขอดที่ขา, และเยื่อบุโพรงมดลูกเจริญผิดที่:** ใช้ได้หลังจากสัญญาฯ มีผลบังคับต่อเนื่อง 365 วัน และมีการต่ออายุในปีถัดไป\n- **ผลประโยชน์สัญญาเพิ่มเติมการประกันภัย โรคร้ายแรงแบบซีไอ 50:** 90 วัน นับแต่วันที่เริ่มมีผลความคุ้มครอง หรือหากมีการต่ออายุสัญญาเพิ่มเติมเมื่อสัญญาเพิ่มเติมสิ้นผลบังคับ หรือวันที่บริษัทอนุมัติให้เพิ่มผลประโยชน์ของสัญญาเพิ่มเติมนี้",
+      "expected_facts": [
+        "90",
+        "120"
+      ],
+      "expected_facts_present": true,
+      "used_raw_fallback": false,
+      "citations": [
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 4,
+          "chunk_id": "insurex-khum-talodcheep-plus-p4-c0",
+          "source_url": "https://cdn.scbprotect.co.th/04_SCB-InsureX_Khum-Talodcheep-Plus_180669.pdf"
+        }
+      ],
+      "evidence_status": "sufficient",
+      "error_code": null,
+      "passed": true
+    },
+    {
+      "product_id": "khum-aomsook-25-15",
+      "question": "คุ้มออมสุข 25/15 กำหนดระยะเวลาออมกี่ปี",
+      "answer": "### แผนคุ้มออมสุข 25/15\n\nแผนคุ้มออมสุข 25/15 กำหนดระยะเวลาชำระเบี้ยประกันภัย 15 ปี และมีระยะเวลาเอาประกันภัย 25 ปี\n\n- **ระยะเวลาชำระเบี้ยประกันภัย:** 15 ปี\n- **ระยะเวลาเอาประกันภัย:** 25 ปี\n\n",
+      "expected_facts": [
+        "15"
+      ],
+      "expected_facts_present": true,
+      "used_raw_fallback": false,
+      "citations": [
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "chunk_id": "insurex-khum-aomsook-p2-c0",
+          "source_url": "https://cdn.scbprotect.co.th/09_SCB-InsureX_Khum-Aomsook_25-15_180669.pdf"
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "chunk_id": "insurex-khum-aomsook-p2-c1",
+          "source_url": "https://cdn.scbprotect.co.th/09_SCB-InsureX_Khum-Aomsook_25-15_180669.pdf"
+        }
+      ],
+      "evidence_status": "sufficient",
+      "error_code": null,
+      "passed": true
+    },
+    {
+      "product_id": "khum-manjai-sure-term",
+      "question": "คุ้มมั่นใจชัวร์มีระยะเวลาคุ้มครองแบบใด",
+      "answer": "### คุ้มมั่นใจชัวร์มีระยะเวลาคุ้มครองแบบใด\n\nคุ้มมั่นใจชัวร์ เป็นประกันชีวิตแบบชั่วระยะเวลาที่ให้ผู้เอาประกันภัยสามารถเลือกระยะเวลาความคุ้มครองที่เหมาะสมกับตนเองได้ โดยมีรายละเอียดดังนี้\n\n- **ระยะเวลาคุ้มครอง:** มีให้เลือกทั้งแบบ 5 ปี, 10 ปี และ 15 ปี\n- **เงื่อนไขระยะเวลา:** ระยะเวลาคุ้มครองจะเท่ากับระยะเวลาชําระเบี้ยประกันภัย\n- **ชื่อทางการตลาด:** เป็นชื่อทางการตลาดของแบบกําหนดระยะเวลา 5/5, 10/10 และ 15/15\n\n",
+      "expected_facts": [
+        "5",
+        "10",
+        "15"
+      ],
+      "expected_facts_present": true,
+      "used_raw_fallback": false,
+      "citations": [
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "chunk_id": "insurex-khum-manjai-sure-term-p3-c0",
+          "source_url": "https://cdn.scbprotect.co.th/06_SCB-InsureX_Khum-Manjai-Sure_Term-5-10-15_180669.pdf"
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 1,
+          "chunk_id": "insurex-khum-manjai-sure-term-p1-c0",
+          "source_url": "https://cdn.scbprotect.co.th/06_SCB-InsureX_Khum-Manjai-Sure_Term-5-10-15_180669.pdf"
+        }
+      ],
+      "evidence_status": "sufficient",
+      "error_code": null,
+      "passed": true
+    },
+    {
+      "product_id": "whole-life-90-20",
+      "question": "ตลอดชีพ 90/20 จ่ายเบี้ยแบบรายเดือนได้หรือไม่",
+      "answer": "### แบบประกันตลอดชีพ 90/20\n\nสามารถชำระเบี้ยประกันภัยแบบรายเดือนได้ตามงวดการชำระเบี้ยประกันภัยที่กำหนดไว้ในเงื่อนไขการรับประกันภัย\n\n- **งวดการชำระเบี้ยประกันภัย:** รายปี / ราย 6 เดือน / ราย 3 เดือน / รายเดือน",
+      "expected_facts": [
+        "รายเดือน"
+      ],
+      "expected_facts_present": true,
+      "used_raw_fallback": false,
+      "citations": [
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "chunk_id": "insurex-whole-life-90-20-p2-c0",
+          "source_url": "https://cdn.scbprotect.co.th/14_SCB-InsureX_Whole-Life_90-20_180669.pdf"
+        }
+      ],
+      "evidence_status": "sufficient",
+      "error_code": null,
+      "passed": true
+    }
+  ],
+  "no_answer": {
+    "answer": "ไม่พบข้อมูลนี้ในเอกสารผลิตภัณฑ์ที่ระบบมี",
+    "citations": [],
+    "error_code": null,
+    "passed": true
+  },
+  "request_count": 5,
+  "retry_requests": 0,
+  "usage": [
+    {
+      "input_tokens": 3455,
+      "output_tokens": 395,
+      "total_tokens": 3850,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 3762,
+      "output_tokens": 464,
+      "total_tokens": 4226,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 2522,
+      "output_tokens": 353,
+      "total_tokens": 2875,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 2555,
+      "output_tokens": 436,
+      "total_tokens": 2991,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 2072,
+      "output_tokens": 225,
+      "total_tokens": 2297,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,861 @@
+{
+  "status": "tested_offline",
+  "executed_at": "2026-09-19T16:48:31.422851+00:00",
+  "case_manifest": "eval\\rag_cases_heldout_v2.jsonl",
+  "case_manifest_sha256": "54f291f7031e3d1874a7ee3f659c417ba7c5feeb70d0901586be671ed3dfa6dc",
+  "corpus_manifest_sha256": "6f6e5b36d7b4db599592281466f8cf351e662b461d4a863129dbe7fb1fdad6a8",
+  "embedding_model": "models\\multilingual-e5-small",
+  "embedding_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "embedding_manifest_sha256": "a91103a7603dc3060347d1f80091ef56217e85cf1d11b2a0e4f4549687549808",
+  "extraction_revision": "sukhumvitset-pua-thai-v1",
+  "extraction_verification_sha256": "6a06aac2bddf17845456f750f1506a298ab83f5aef4be654173bcaf75929fe4c",
+  "index_fingerprint": "cf89f513b18901f16fe6b324d87183fb9134bf654896c39f79e58d2159a30f1c",
+  "chunk_config": {
+    "max_characters": 1800,
+    "overlap": 240,
+    "max_tokens": 400,
+    "chunking_revision": "paragraph-boundary-v4"
+  },
+  "chroma_count": 31,
+  "actual_index_ids_sha256": "5dfba8222446f7a5afe76a17b5cb285b2a5ca5ff225c7114412969cdaa824445",
+  "actual_index_metadata": {
+    "collection_name": "insurex_kb",
+    "chunk_count": 31,
+    "chunk_ids_sha256": "5dfba8222446f7a5afe76a17b5cb285b2a5ca5ff225c7114412969cdaa824445",
+    "index_fingerprint": "cf89f513b18901f16fe6b324d87183fb9134bf654896c39f79e58d2159a30f1c",
+    "manifest_sha256": "6f6e5b36d7b4db599592281466f8cf351e662b461d4a863129dbe7fb1fdad6a8",
+    "embedding_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "embedding_manifest_sha256": "a91103a7603dc3060347d1f80091ef56217e85cf1d11b2a0e4f4549687549808",
+    "model_files_fingerprint": "520a82130d7a3f3b0a0c73746e95964224076263fefe6abdbe1a44c0a4bf2369",
+    "extraction_verification_sha256": "6a06aac2bddf17845456f750f1506a298ab83f5aef4be654173bcaf75929fe4c",
+    "extraction_revision": "sukhumvitset-pua-thai-v1",
+    "chunk_config": {
+      "max_characters": 1800,
+      "overlap": 240,
+      "max_tokens": 400,
+      "chunking_revision": "paragraph-boundary-v4"
+    },
+    "corpus_files": {
+      "knowledge_base/pdfs/insurex-khum-talodcheep-ci-plus.pdf": "8eb0fae1684401ed50e3997087e330059d2350f3481119771460224579c62710",
+      "knowledge_base/extracted/corrected/insurex-khum-talodcheep-ci-plus.json": "87573d5f101aacbda1691491ce41a15fd1fcbaf2408b65b8f04cb4c0c21314c6",
+      "knowledge_base/pdfs/insurex-khum-talodcheep-plus.pdf": "061b458b3cd553503cb08b8e27669eb6756e113d2db144f50c6022d0ebdf3500",
+      "knowledge_base/extracted/corrected/insurex-khum-talodcheep-plus.json": "0a90d5522fac2b21aa3540cc3d48271785c9b6f6b0bd3a6db011a0e6105e74ab",
+      "knowledge_base/pdfs/insurex-khum-aomsook-25-15.pdf": "547765886207343125dc741479b855c9c74f59c4ab322849c0c9382ecc6cd0b8",
+      "knowledge_base/extracted/corrected/insurex-khum-aomsook.json": "93b33a29b52699dcb267d6656443898a6c32687096513af1ecdd4a996f982492",
+      "knowledge_base/pdfs/candidates/04-term.pdf": "ab345c1a4192e85a096d90aa430fa2f8aa210aae0eaa185ab16cab35e40cdd0e",
+      "knowledge_base/extracted/corrected/insurex-khum-manjai-sure-term.json": "326115f1aa15088177d730666e43428560116813a2ef5ed776033bf2c36ddbf8",
+      "knowledge_base/pdfs/candidates/05-wholelife90-20.pdf": "b0626712381e4f3f5f98df36f041d2b4495c1629c12b965286af9a061342a64b",
+      "knowledge_base/extracted/corrected/insurex-whole-life-90-20.json": "2a1255ad3ad5b8be38059d23238697f3440acc488da332678c6ab5178120339b"
+    }
+  },
+  "total_cases": 20,
+  "dev_cases": 0,
+  "held_out_cases": 20,
+  "dev_passed": 0,
+  "held_out_passed": 20,
+  "results": [
+    {
+      "case_id": "v2-01",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.8377679586410522
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 3,
+          "score": 0.8335956186056137
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.8253641724586487
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.7711163461208344
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.7545231282711029
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-02",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.8433901965618134
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.8252513855695724
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 3,
+          "score": 0.8219074606895447
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.7912532091140747
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.769983634352684
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-03",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.7924092411994934
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 3,
+          "score": 0.7787526100873947
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.7657336890697479
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.7304090559482574
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.7255359590053558
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-04",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 1,
+          "score": 0.8353040516376495
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 3,
+          "score": 0.8297751843929291
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 2,
+          "score": 0.8080447465181351
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 4,
+          "score": 0.8050288408994675
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 1,
+          "score": 0.7911758720874786
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-05",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 3,
+          "score": 0.8071125745773315
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 2,
+          "score": 0.7845685631036758
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 1,
+          "score": 0.7822616696357727
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 4,
+          "score": 0.7705332487821579
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 4,
+          "score": 0.72962686419487
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-06",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 1,
+          "score": 0.8106358647346497
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 3,
+          "score": 0.8039689064025879
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 2,
+          "score": 0.794647291302681
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 4,
+          "score": 0.7774722874164581
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 1,
+          "score": 0.7499324977397919
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-07",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 1,
+          "score": 0.8191536664962769
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.8007723391056061
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.7660226374864578
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.5828099250793457
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-08",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 1,
+          "score": 0.8030320107936859
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.764115571975708
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.6933277249336243
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.5208682417869568
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-09",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook",
+        "insurex-khum-aomsook"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 1,
+          "score": 0.8398133814334869
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.7827960848808289
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.7492802143096924
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.5676367580890656
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-10",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.8024596571922302
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 1,
+          "score": 0.7688817232847214
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 2,
+          "score": 0.758156806230545
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.5963132083415985
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-11",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.7835502773523331
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 1,
+          "score": 0.7707710415124893
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 2,
+          "score": 0.7529957592487335
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.6211604475975037
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-12",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 2,
+          "score": 0.8004283756017685
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.7849002033472061
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 1,
+          "score": 0.7823048382997513
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.6236979365348816
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-13",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 2,
+          "score": 0.7813855558633804
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 1,
+          "score": 0.7789983749389648
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.7656784802675247
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.6075236797332764
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-14",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-whole-life-90-20",
+        "insurex-whole-life-90-20",
+        "insurex-whole-life-90-20"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 1,
+          "score": 0.7774724662303925
+        },
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "score": 0.7730952203273773
+        },
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "score": 0.725057065486908
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-15",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-whole-life-90-20",
+        "insurex-whole-life-90-20",
+        "insurex-whole-life-90-20"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 1,
+          "score": 0.7625739723443985
+        },
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "score": 0.7193120718002319
+        },
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "score": 0.6250941753387451
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-16",
+      "split": "held_out_v2",
+      "expected_type": "answerable",
+      "retrieved_doc_ids": [
+        "insurex-whole-life-90-20",
+        "insurex-whole-life-90-20",
+        "insurex-whole-life-90-20"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "score": 0.7707670629024506
+        },
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 1,
+          "score": 0.753322958946228
+        },
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "score": 0.6703873872756958
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "sufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-17",
+      "split": "held_out_v2",
+      "expected_type": "ambiguous",
+      "retrieved_doc_ids": [
+        "insurex-whole-life-90-20",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "score": 0.8026158213615417
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.789206862449646
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.7829156816005707
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.7803704142570496
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.7769582718610764
+        }
+      ],
+      "assessment": "sufficient",
+      "structural_status": "ambiguous",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-18",
+      "split": "held_out_v2",
+      "expected_type": "no_answer",
+      "retrieved_doc_ids": [
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-khum-talodcheep-ci-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.6540506184101105
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.6428819894790649
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.6372720897197723
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 2,
+          "score": 0.6345597207546234
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.6328928470611572
+        }
+      ],
+      "assessment": "insufficient",
+      "structural_status": "insufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-19",
+      "split": "held_out_v2",
+      "expected_type": "no_answer",
+      "retrieved_doc_ids": [
+        "insurex-khum-aomsook",
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-aomsook",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-manjai-sure-term"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 2,
+          "score": 0.6650063097476959
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 2,
+          "score": 0.6604711413383484
+        },
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page": 1,
+          "score": 0.6519977748394012
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 1,
+          "score": 0.6490955054759979
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 2,
+          "score": 0.6487436890602112
+        }
+      ],
+      "assessment": "insufficient",
+      "structural_status": "insufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    },
+    {
+      "case_id": "v2-20",
+      "split": "held_out_v2",
+      "expected_type": "no_answer",
+      "retrieved_doc_ids": [
+        "insurex-khum-talodcheep-plus",
+        "insurex-khum-talodcheep-ci-plus",
+        "insurex-whole-life-90-20",
+        "insurex-khum-manjai-sure-term",
+        "insurex-khum-talodcheep-ci-plus"
+      ],
+      "retrieved_pages": [
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 4,
+          "score": 0.8025835901498795
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 3,
+          "score": 0.7948016226291656
+        },
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page": 2,
+          "score": 0.7914389669895172
+        },
+        {
+          "doc_id": "insurex-khum-manjai-sure-term",
+          "page": 3,
+          "score": 0.7820923179388046
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 1,
+          "score": 0.7790997326374054
+        }
+      ],
+      "assessment": "insufficient",
+      "structural_status": "insufficient",
+      "expected_doc_hit": true,
+      "expected_page_hit": true,
+      "passed": true
+    }
+  ],
+  "live_llm_calls": 0
+}

@@ -1,0 +1,10 @@
+{
+  "cookie_created": true,
+  "cookie_http_only": false,
+  "cookie_same_site": "Strict",
+  "refresh_kept_login": true,
+  "login_form_after_refresh": 0,
+  "logout_survived_refresh": true,
+  "cookie_removed_on_logout": true,
+  "passed": true
+}

@@ -1,0 +1,40 @@
+{
+  "executed_at": "2026-09-20T13:56:59.681653+00:00",
+  "surface": "http://localhost:8513/",
+  "browser_checks": {
+    "greeting_answered_directly": true,
+    "greeting_did_not_handoff": true,
+    "out_of_scope_answered_with_scope_guidance": true,
+    "out_of_scope_did_not_handoff": true,
+    "explicit_human_request_created_handoff": true,
+    "explicit_human_case_resolved_after_staff_test": true
+  },
+  "turns": {
+    "สวัสดีครับ": {
+      "message_id": 301,
+      "purpose": "private",
+      "answer": "สวัสดีครับ 👋 ผมช่วยค้นข้อมูลผลิตภัณฑ์ประกัน InsureX เปรียบเทียบความคุ้มครอง และรับข้อมูลสำหรับให้พนักงานติดต่อกลับได้ครับ",
+      "handoff_cases": []
+    },
+    "วันนี้อากาศเป็นอย่างไร": {
+      "message_id": 303,
+      "purpose": "private",
+      "answer": "ผมช่วยตอบเฉพาะข้อมูลผลิตภัณฑ์ประกัน InsureX จากเอกสารในระบบครับ ลองถามเรื่องความคุ้มครอง เบี้ย ระยะเวลา หรือเงื่อนไขของผลิตภัณฑ์ได้เลย",
+      "handoff_cases": []
+    },
+    "ขอคุยกับพนักงาน": {
+      "message_id": 305,
+      "purpose": "private",
+      "answer": "รับทราบครับ กำลังส่งบทสนทนานี้ให้พนักงานขายช่วยดูแลต่อ",
+      "handoff_cases": [
+        {
+          "case_id": 2,
+          "status": "resolved",
+          "trigger_reason": "no_answer"
+        }
+      ]
+    }
+  },
+  "unit_contract": "direct conversation graph paths recorded zero retrieve/assess/generate/rewrite calls",
+  "passed": true
+}

@@ -1,0 +1,89 @@
+{
+  "executed_at": "2026-09-20T13:32:01.227930+00:00",
+  "surface": "http://localhost:8513/",
+  "accounts": {
+    "customer": "demo-agent-a",
+    "claiming_staff": "demo-staff-a",
+    "non_claiming_staff": "demo-staff-b"
+  },
+  "browser_checks": {
+    "unsupported_question_created_pending_case": true,
+    "ai_paused_while_open": true,
+    "claiming_staff_could_reply": true,
+    "non_claiming_staff_queue_empty_after_claim": true,
+    "resolved_case_disappeared_from_queue": true,
+    "customer_saw_attributed_staff_reply": true,
+    "ai_resumed_after_resolution": true,
+    "supported_rag_answer_after_resolution": true,
+    "supported_answer_citations": [
+      "insurex-khum-talodcheep-plus p.1",
+      "insurex-khum-talodcheep-plus p.2",
+      "insurex-khum-talodcheep-plus p.3"
+    ]
+  },
+  "handoff_record": {
+    "case_id": 1,
+    "session_id": "86248995-2ddf-473d-990a-fe7551188b3a",
+    "status": "resolved",
+    "trigger_reason": "retrieved chunks do not provide sufficient query evidence",
+    "assigned_staff_id": "eb1fba8b-3cac-457f-bcee-b220a18dfd03",
+    "created_at": "2026-09-20T13:25:03.183309+00:00",
+    "accepted_at": "2026-09-20T13:26:40.694501+00:00",
+    "resolved_at": "2026-09-20T13:29:13.544947+00:00"
+  },
+  "recent_transcript": [
+    {
+      "role": "user",
+      "sender_type": "customer",
+      "sender_label": "demo-agent-a",
+      "content": "ช่วยบอกสูตรทำแกงเขียวหวานอย่างละเอียด"
+    },
+    {
+      "role": "assistant",
+      "sender_type": "ai",
+      "sender_label": "AI ผู้ช่วยผลิตภัณฑ์",
+      "content": "ไม่พบข้อมูลนี้ในเอกสารผลิตภัณฑ์ที่ระบบมี\n\nส่งคำถามนี้ให้พนักงานขายช่วยตรวจสอบต่อแล้วครับ"
+    },
+    {
+      "role": "assistant",
+      "sender_type": "staff",
+      "sender_label": "demo-staff-a",
+      "content": "พนักงานรับเรื่องแล้วครับ คำถามนี้อยู่นอกข้อมูลผลิตภัณฑ์ประกันที่ระบบมี"
+    },
+    {
+      "role": "user",
+      "sender_type": "customer",
+      "sender_label": "demo-agent-a",
+      "content": "คุ้มตลอดชีพ พลัส มีความคุ้มครองอะไรบ้าง"
+    },
+    {
+      "role": "assistant",
+      "sender_type": "ai",
+      "sender_label": "AI ผู้ช่วยผลิตภัณฑ์",
+      "content": "### แผนประกันคุ้มตลอดชีพ พลัส\nคุ้มตลอดชีพ พลัส ให้ความคุ้มครองครอบคลุมครบจบในกรมธรรม์เดียว ทั้งชีวิต สุขภาพ และโรคร้ายแรง\n\n- **ความคุ้มครองชีวิต:** คุ้มครองชีวิตตลอดสัญญาจนถึงอายุ 99 ปี หรือรับเงินก้อนเมื่อมีชีวิตอยู่จนครบกำหนดสัญญา\n- **ความคุ้มครองสุขภาพ:** ค่ารักษาพยาบาลแบบเหมาจ่ายทั้งผู้ป่วยนอก (OPD) ผู้ป่วยใน (IPD) และผลประโยชน์ค่ารักษาพยาบาลอื่นๆ\n- **ความคุ้มครองโรคร้ายแรง:** ผลประโยชน์โรคร้ายแรงก่อนครบรอบปีกรมธรรม์ที่อายุครบ 85 ปี รวมถึงการดูแลพิเศษกรณีเจ็บป่วยด้วย 3 โรคร้ายแรง\n- **ความคุ้มครองเพิ่มเติม:** สามารถเลือกซื้อสัญญาเพิ่มเติมสุขภาพได้ตามต้องการ เช่น แผนชดเชยรายวัน (เฮชบี) และค่ารักษาพยาบาลผู้ป่วยนอก (โอพีดี พลัส)\n- **ความคุ้มครองเลือกได้:** มีทางเลือกประหยัดค่าเบี้ยประกันภัยด้วยแผนความรับผิดส่วนแรกสำหรับความคุ้มครองค่ารักษาพยาบาลแบบเหมาจ่าย"
+    }
+  ],
+  "database_separation": {
+    "assistant_path": "db/assistant.sqlite",
+    "assistant_tables": [
+      "handoff_cases",
+      "lead_drafts",
+      "lead_request_log",
+      "leads",
+      "login_sessions",
+      "messages",
+      "sessions",
+      "user_accounts"
+    ],
+    "analytics_path": "db/analytics.sqlite",
+    "analytics_tables": [
+      "agents",
+      "contract_history",
+      "kpi_rules",
+      "monthly_agent_performance",
+      "monthly_kpi_evaluations"
+    ],
+    "overlap": []
+  },
+  "passed": true
+}

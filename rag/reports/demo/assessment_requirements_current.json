@@ -1,0 +1,234 @@
+{
+  "executed_at": "2026-09-20T18:21:19.262709+00:00",
+  "environment": {
+    "langchain": "1.4.1",
+    "langgraph": "1.2.11",
+    "chromadb": "1.5.9",
+    "assistant_database": "isolated_temporary_sqlite",
+    "analytics_database": "data_modeling\\db\\analytics.sqlite"
+  },
+  "workflow": {
+    "uses_state_graph": true,
+    "nodes": [
+      "__end__",
+      "__start__",
+      "assess_evidence",
+      "collect_lead",
+      "direct_response",
+      "fallback",
+      "generate_grounded_answer",
+      "prepare_turn",
+      "resolve_query",
+      "retrieve",
+      "rewrite_query_once",
+      "route_intent",
+      "validate_answer_citations"
+    ],
+    "edges": [
+      [
+        "__start__",
+        "prepare_turn"
+      ],
+      [
+        "assess_evidence",
+        "fallback"
+      ],
+      [
+        "assess_evidence",
+        "generate_grounded_answer"
+      ],
+      [
+        "assess_evidence",
+        "rewrite_query_once"
+      ],
+      [
+        "collect_lead",
+        "__end__"
+      ],
+      [
+        "direct_response",
+        "__end__"
+      ],
+      [
+        "fallback",
+        "__end__"
+      ],
+      [
+        "generate_grounded_answer",
+        "validate_answer_citations"
+      ],
+      [
+        "prepare_turn",
+        "route_intent"
+      ],
+      [
+        "resolve_query",
+        "retrieve"
+      ],
+      [
+        "retrieve",
+        "assess_evidence"
+      ],
+      [
+        "rewrite_query_once",
+        "retrieve"
+      ],
+      [
+        "route_intent",
+        "collect_lead"
+      ],
+      [
+        "route_intent",
+        "direct_response"
+      ],
+      [
+        "route_intent",
+        "resolve_query"
+      ],
+      [
+        "validate_answer_citations",
+        "__end__"
+      ],
+      [
+        "validate_answer_citations",
+        "fallback"
+      ]
+    ],
+    "all_expected_nodes_present": true,
+    "bounded_retrieval_cycle_present": true,
+    "persistent_sqlite_checkpointer": true
+  },
+  "vector_database": {
+    "backend": "ChromaDB",
+    "retrieval_mode": "hybrid",
+    "collection": "insurex_kb",
+    "chunk_count": 31,
+    "document_count": 5,
+    "all_five_documents_retrieved": true,
+    "cases": [
+      {
+        "product_id": "khum-talodcheep-ci-plus",
+        "expected_doc_id": "insurex-khum-talodcheep-ci-plus",
+        "retrieved_doc_ids": [
+          "insurex-khum-talodcheep-ci-plus"
+        ],
+        "chunk_count": 5,
+        "passed": true
+      },
+      {
+        "product_id": "khum-talodcheep-plus",
+        "expected_doc_id": "insurex-khum-talodcheep-plus",
+        "retrieved_doc_ids": [
+          "insurex-khum-talodcheep-plus"
+        ],
+        "chunk_count": 5,
+        "passed": true
+      },
+      {
+        "product_id": "khum-aomsook-25-15",
+        "expected_doc_id": "insurex-khum-aomsook",
+        "retrieved_doc_ids": [
+          "insurex-khum-aomsook"
+        ],
+        "chunk_count": 4,
+        "passed": true
+      },
+      {
+        "product_id": "khum-manjai-sure-term",
+        "expected_doc_id": "insurex-khum-manjai-sure-term",
+        "retrieved_doc_ids": [
+          "insurex-khum-manjai-sure-term"
+        ],
+        "chunk_count": 4,
+        "passed": true
+      },
+      {
+        "product_id": "whole-life-90-20",
+        "expected_doc_id": "insurex-whole-life-90-20",
+        "retrieved_doc_ids": [
+          "insurex-whole-life-90-20"
+        ],
+        "chunk_count": 3,
+        "passed": true
+      }
+    ]
+  },
+  "no_answer": {
+    "passed": true,
+    "citations": [],
+    "error_code": null,
+    "fallback_node_seen": false
+  },
+  "lead_collection": {
+    "implementation": "LangGraph callable Tooling path; not an MCP protocol server",
+    "schema": [
+      "name",
+      "occupation",
+      "income",
+      "phone",
+      "product_id"
+    ],
+    "accounts": [
+      {
+        "username": "demo-agent-a",
+        "session_id": "1bf0942f-0f29-414f-8666-1c90ac66e6a3",
+        "thread_id": "a8655199-ccc9-4cb2-b124-11ffbb9b5943",
+        "lead_id": 1,
+        "structured_fields_complete": true,
+        "saved": true
+      },
+      {
+        "username": "demo-agent-b",
+        "session_id": "f99ef108-d305-479f-ad1f-a0556c18b588",
+        "thread_id": "523291f8-3f9a-48b1-bd4d-8f4075541b88",
+        "lead_id": 2,
+        "structured_fields_complete": true,
+        "saved": true
+      }
+    ],
+    "sqlite_integrity": [
+      {
+        "username": "demo-agent-a",
+        "lead_id": 1,
+        "owner_matches": true,
+        "name_matches": true,
+        "occupation_matches": true,
+        "income_matches": true,
+        "income_period_matches": true,
+        "phone_matches": true
+      },
+      {
+        "username": "demo-agent-b",
+        "lead_id": 2,
+        "owner_matches": true,
+        "name_matches": true,
+        "occupation_matches": true,
+        "income_matches": true,
+        "income_period_matches": true,
+        "phone_matches": true
+      }
+    ],
+    "all_passed": true
+  },
+  "session_management": {
+    "distinct_session_ids": true,
+    "distinct_thread_ids": true,
+    "cross_owner_access_blocked": true,
+    "checkpoint_a_exists": true,
+    "checkpoint_b_exists": true
+  },
+  "runtime_log": {
+    "event_count": 30,
+    "pii_safe": true,
+    "stages_seen": [
+      "checkpoint",
+      "collect_lead",
+      "direct_response",
+      "prepare_turn",
+      "request",
+      "route_intent",
+      "session"
+    ]
+  },
+  "passed": true
+}

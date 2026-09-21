@@ -1,0 +1,304 @@
+{
+  "status": "verified_corrected_extraction",
+  "mapping_revision": "sukhumvitset-pua-thai-v1",
+  "method": {
+    "raw_extraction": "pypdf.PdfReader.page.extract_text",
+    "font_mapping": "embedded ToUnicode CMap contains the private-use targets used by the page text",
+    "visual_check": "all 14 active-corpus pages rendered with pdftoppm and reviewed against the visible Thai headings, labels, tables and repeated words",
+    "ocr_used": false,
+    "llm_used": false,
+    "raw_text_preserved": true
+  },
+  "pua_mapping": {
+    "U+F702": {
+      "target": "U+0E35",
+      "visible_examples": [
+        "ปี",
+        "ปีกรมธรรม์"
+      ],
+      "pages": [
+        "04-term:p1",
+        "05-wholelife90-20:p1"
+      ]
+    },
+    "U+F704": {
+      "target": "U+0E37",
+      "visible_examples": [
+        "ฟื้นฟู"
+      ],
+      "pages": [
+        "insurex-khum-talodcheep-plus:p2"
+      ]
+    },
+    "U+F705": {
+      "target": "U+0E48",
+      "visible_examples": [
+        "ป่วย"
+      ],
+      "pages": [
+        "04-term:p1",
+        "insurex-khum-talodcheep-ci-plus:p1"
+      ]
+    },
+    "U+F706": {
+      "target": "U+0E49",
+      "visible_examples": [
+        "เป้าหมาย",
+        "ป้อง"
+      ],
+      "pages": [
+        "insurex-khum-aomsook-25-15:p2",
+        "insurex-khum-talodcheep-ci-plus:p1"
+      ]
+    },
+    "U+F708": {
+      "target": "U+0E4B",
+      "visible_examples": [
+        "กระเป๋า"
+      ],
+      "pages": [
+        "04-term:p1",
+        "insurex-khum-talodcheep-plus:p1"
+      ]
+    },
+    "U+F70A": {
+      "target": "U+0E48",
+      "visible_examples": [
+        "ว่า",
+        "ค่า",
+        "แต่"
+      ],
+      "pages": [
+        "insurex-khum-aomsook-25-15:p1",
+        "05-wholelife90-20:p1"
+      ]
+    },
+    "U+F70B": {
+      "target": "U+0E49",
+      "visible_examples": [
+        "คุ้ม",
+        "ได้",
+        "ร้าย"
+      ],
+      "pages": [
+        "insurex-khum-talodcheep-ci-plus:p1",
+        "insurex-khum-talodcheep-plus:p1"
+      ]
+    },
+    "U+F70E": {
+      "target": "U+0E4C",
+      "visible_examples": [
+        "กรมธรรม์",
+        "ประโยชน์"
+      ],
+      "pages": [
+        "04-term:p2",
+        "insurex-khum-talodcheep-ci-plus:p2"
+      ]
+    },
+    "U+F710": {
+      "target": "U+0E31",
+      "visible_examples": [
+        "ฝัน",
+        "ปัจจุบัน"
+      ],
+      "pages": [
+        "04-term:p1",
+        "insurex-khum-aomsook-25-15:p1"
+      ]
+    },
+    "U+F712": {
+      "target": "U+0E47",
+      "visible_examples": [
+        "เป็น"
+      ],
+      "pages": [
+        "04-term:p1",
+        "insurex-khum-talodcheep-plus:p1"
+      ]
+    },
+    "U+F714": {
+      "target": "U+0E49",
+      "visible_examples": [
+        "ฟื้นฟู"
+      ],
+      "pages": [
+        "insurex-khum-talodcheep-plus:p2"
+      ]
+    }
+  },
+  "documents": [
+    {
+      "doc_id": "insurex-khum-talodcheep-ci-plus",
+      "pdf_sha256": "8eb0fae1684401ed50e3997087e330059d2350f3481119771460224579c62710",
+      "page_count": 3,
+      "font_mapping_source": "embedded ToUnicode CMap",
+      "font_mapping_pua_targets": [
+        "U+F702",
+        "U+F705",
+        "U+F706",
+        "U+F70A",
+        "U+F70B",
+        "U+F70E",
+        "U+F710",
+        "U+F712"
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-talodcheep-ci-plus-p1-1.png",
+          "render_sha256": "068894ac06c215ec0f4153a92be0b97774f6134c0874e2f6dbaab668db281179",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 2,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-talodcheep-ci-plus-p2-2.png",
+          "render_sha256": "86fabe7ba0a0b6702ebac8594b83b1f0adc73df32ec2ea443e6934859c4d4f8c",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 3,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-talodcheep-ci-plus-p3-3.png",
+          "render_sha256": "e9a6cae72eaf6225100e91f9c519d1604bf4ec5b4546b99fab71c18eb36b67da",
+          "visual_review": "reviewed_against_rendered_page"
+        }
+      ]
+    },
+    {
+      "doc_id": "insurex-khum-talodcheep-plus",
+      "pdf_sha256": "061b458b3cd553503cb08b8e27669eb6756e113d2db144f50c6022d0ebdf3500",
+      "page_count": 4,
+      "font_mapping_source": "embedded ToUnicode CMap",
+      "font_mapping_pua_targets": [
+        "U+F702",
+        "U+F704",
+        "U+F705",
+        "U+F708",
+        "U+F70A",
+        "U+F70B",
+        "U+F70E",
+        "U+F710",
+        "U+F712",
+        "U+F714"
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-talodcheep-plus-p1-1.png",
+          "render_sha256": "0490a5568ddce969d911a029ad266d2425e3cd7435f2b5a86301fef56e7374c1",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 2,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-talodcheep-plus-p2-2.png",
+          "render_sha256": "9f2b4ec07bb9a5361a8f25dadbb0278ce2db5dd56f0deea5d8034d52cfd4a013",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 3,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-talodcheep-plus-p3-3.png",
+          "render_sha256": "43e9e8ef138e7956245d5a08eb6ce638df130b912251ffcfb52024a4a65fcc5d",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 4,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-talodcheep-plus-p4-4.png",
+          "render_sha256": "70d94ba1cd1f6c09b5bf088ad7abb68bcbdd0f378fd218667fbc5c98955d66c4",
+          "visual_review": "reviewed_against_rendered_page"
+        }
+      ]
+    },
+    {
+      "doc_id": "insurex-khum-aomsook",
+      "pdf_sha256": "547765886207343125dc741479b855c9c74f59c4ab322849c0c9382ecc6cd0b8",
+      "page_count": 2,
+      "font_mapping_source": "embedded ToUnicode CMap",
+      "font_mapping_pua_targets": [
+        "U+F702",
+        "U+F706",
+        "U+F70A",
+        "U+F70B",
+        "U+F70E",
+        "U+F710",
+        "U+F712"
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-aomsook-p1-1.png",
+          "render_sha256": "adc270babaabc939ca68f9dc6203531850b4c3a9566afb937fa01da87d5ac24e",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 2,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-aomsook-p2-2.png",
+          "render_sha256": "132f1498a8e19a94101735ccb5706d0d01459f78fd5e278e2cb9deea26a7320e",
+          "visual_review": "reviewed_against_rendered_page"
+        }
+      ]
+    },
+    {
+      "doc_id": "insurex-khum-manjai-sure-term",
+      "pdf_sha256": "ab345c1a4192e85a096d90aa430fa2f8aa210aae0eaa185ab16cab35e40cdd0e",
+      "page_count": 3,
+      "font_mapping_source": "embedded ToUnicode CMap",
+      "font_mapping_pua_targets": [
+        "U+F702",
+        "U+F708",
+        "U+F70A",
+        "U+F70B",
+        "U+F70E",
+        "U+F710",
+        "U+F712"
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-manjai-sure-term-p1-1.png",
+          "render_sha256": "798c0f3d89b9a6e01b5c00be9d47c98c2d3e5b429f3fd1b747b6abb0e96b76c2",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 2,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-manjai-sure-term-p2-2.png",
+          "render_sha256": "be5c7ee157ae88a91630fef0353eac250bd9ff9321131033ab326614f63f6236",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 3,
+          "render_path": "tmp\\pdf_verified_render\\insurex-khum-manjai-sure-term-p3-3.png",
+          "render_sha256": "18dcbc945c902363e0cd3166d3abd68bca823f531cd12bb82675eb7c7c83e53b",
+          "visual_review": "reviewed_against_rendered_page"
+        }
+      ]
+    },
+    {
+      "doc_id": "insurex-whole-life-90-20",
+      "pdf_sha256": "b0626712381e4f3f5f98df36f041d2b4495c1629c12b965286af9a061342a64b",
+      "page_count": 2,
+      "font_mapping_source": "embedded ToUnicode CMap",
+      "font_mapping_pua_targets": [
+        "U+F702",
+        "U+F70A",
+        "U+F70B",
+        "U+F70E",
+        "U+F710",
+        "U+F712"
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "render_path": "tmp\\pdf_verified_render\\insurex-whole-life-90-20-p1-1.png",
+          "render_sha256": "d1ad1d5ceb138dd0419eab62ffa40c4fb2cd6560577fb4d93d9baf15eed638b3",
+          "visual_review": "reviewed_against_rendered_page"
+        },
+        {
+          "page_number": 2,
+          "render_path": "tmp\\pdf_verified_render\\insurex-whole-life-90-20-p2-2.png",
+          "render_sha256": "141ab365d03cd0fa999ad9d7d68ad0fd4b089da4544d8bde793b936b17071ea7",
+          "visual_review": "reviewed_against_rendered_page"
+        }
+      ]
+    }
+  ]
+}

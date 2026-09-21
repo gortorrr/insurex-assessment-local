@@ -1,0 +1,112 @@
+{
+  "status": "tested_offline",
+  "synthetic_only": true,
+  "turns": [
+    {
+      "session": "A",
+      "query": "สนใจสมัครประกัน Khum Talodcheep CI Plus",
+      "answer": "กรุณาแจ้ง ชื่อ, อาชีพ, รายได้พร้อมสกุลเงินและช่วงเวลา, เบอร์โทรศัพท์ เพิ่มเติม",
+      "intent": "lead",
+      "missing": [
+        "name",
+        "occupation",
+        "income",
+        "income_currency",
+        "income_period",
+        "phone"
+      ],
+      "saved_id": null,
+      "citation_count": 0,
+      "citation_preview": []
+    },
+    {
+      "session": "B",
+      "query": "สนใจสมัครประกัน Khum Talodcheep CI Plus",
+      "answer": "กรุณาแจ้ง ชื่อ, อาชีพ, รายได้พร้อมสกุลเงินและช่วงเวลา, เบอร์โทรศัพท์ เพิ่มเติม",
+      "intent": "lead",
+      "missing": [
+        "name",
+        "occupation",
+        "income",
+        "income_currency",
+        "income_period",
+        "phone"
+      ],
+      "saved_id": null,
+      "citation_count": 0,
+      "citation_preview": []
+    },
+    {
+      "session": "A",
+      "query": "ชื่อ เอก อาชีพ โปรแกรมเมอร์ รายได้ 30000 บาทต่อเดือน",
+      "answer": "กรุณาแจ้ง เบอร์โทรศัพท์ เพิ่มเติม",
+      "intent": "lead",
+      "missing": [
+        "phone"
+      ],
+      "saved_id": null,
+      "citation_count": 0,
+      "citation_preview": []
+    },
+    {
+      "session": "B",
+      "query": "ชื่อ บี อาชีพ ครู รายได้ 45000 บาทต่อเดือน",
+      "answer": "กรุณาแจ้ง เบอร์โทรศัพท์ เพิ่มเติม",
+      "intent": "lead",
+      "missing": [
+        "phone"
+      ],
+      "saved_id": null,
+      "citation_count": 0,
+      "citation_preview": []
+    }
+  ],
+  "session_isolation": {
+    "A_leads": [
+      {
+        "lead_id": 1,
+        "name": "เอก",
+        "occupation": "โปรแกรมเมอร์",
+        "income_thb": 30000,
+        "income_period": "monthly_thb",
+        "product_id": "khum-talodcheep-ci-plus",
+        "phone_normalized": "081•••••78"
+      }
+    ],
+    "B_leads": [],
+    "A_thread": "8295b993-eb37-4a57-bb7e-9b21359ad02b",
+    "B_thread": "f44c2054-213d-4509-9b9c-f21fb14113ed",
+    "threads_differ": true
+  },
+  "rag_examples": {
+    "answerable": {
+      "answer_preview": "### ข้อความหลักฐานจากเอกสาร\n\n> โหมดออฟไลน์: ข้อความนี้คัดจาก PDF ที่ตรวจแล้ว ไม่ใช่คำตอบที่สร้างโดย LLM\n\n**เอกสาร:** `insurex-khum-talodcheep-ci-plus`  \n**หน้า:** 3\n\n> ให้รวมถึงแต่ไม่จํากัดเฉพาะเนื้องอก Kaposi’s Sarcoma มะเร็งต่อมนํ้าเหลือง",
+      "citations": [
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page": 3,
+          "chunk_id": "insurex-khum-talodcheep-ci-plus-p3-c2",
+          "source_url": "https://cdn.scbprotect.co.th/11_SCB-InsureX_Khum-Talodcheep-CI-Plus_90-5_90-10_90-20_180669.pdf"
+        }
+      ],
+      "status": "offline_evidence_extract"
+    },
+    "unanswerable": {
+      "answer": "ไม่พบข้อมูลนี้ในเอกสารผลิตภัณฑ์ที่ระบบมี",
+      "citations": [],
+      "status": "offline_no_answer_gate",
+      "evidence_status": "insufficient",
+      "error_code": null
+    }
+  },
+  "restart": {
+    "A_missing_after_restart": [],
+    "B_missing_after_restart": [
+      "phone"
+    ],
+    "A_saved_id": 1,
+    "B_saved_id": null
+  },
+  "shared_business_database": true,
+  "chroma_count": 31
+}

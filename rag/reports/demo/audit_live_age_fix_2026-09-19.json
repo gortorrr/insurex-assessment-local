@@ -1,0 +1,17 @@
+{
+  "executed_at": "2026-09-19T16:15:15.050584+00:00",
+  "query": "คุ้มมั่นใจชัวร์ อายุรับประกันภัยเท่าไร",
+  "answer": "อายุรับประกันภัยของประกันภัย \"คุ้มมั่นใจชัวร์\" แบบชั่วระยะเวลา แบ่งตามระยะเวลาชำระเบี้ยประกันภัย ดังนี้\n- ระยะเวลา 5 ปี: 20 - 60 ปี\n- ระยะเวลา 10 ปี: 20 - 55 ปี\n- ระยะเวลา 15 ปี: 20 - 50 ปี",
+  "citations": [
+    {
+      "doc_id": "insurex-khum-manjai-sure-term",
+      "page_number": 3,
+      "chunk_id": "insurex-khum-manjai-sure-term-p3-c0",
+      "source_url": "https://cdn.scbprotect.co.th/06_SCB-InsureX_Khum-Manjai-Sure_Term-5-10-15_180669.pdf"
+    }
+  ],
+  "reason": "citations resolve and answer claims have cited-text support",
+  "error": null,
+  "requests": 1,
+  "passed": true
+}

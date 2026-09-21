@@ -1,0 +1,44 @@
+{
+  "synthetic": true,
+  "lead": {
+    "lead_id": 6,
+    "duplicate_request_same_id": true,
+    "validated_json": {
+      "name": "ผู้ทดสอบ",
+      "occupation": "Analyst",
+      "income": "45000",
+      "income_currency": "THB",
+      "income_period": "monthly_thb",
+      "phone": "081•••••78",
+      "product_id": "product-a",
+      "confirmation_status": "confirmed"
+    },
+    "phone_masked": "081•••••78"
+  },
+  "sessions": {
+    "a": {
+      "session_id": "7e1bda53-6ab2-407c-8a56-8d8aedc7cf9a",
+      "thread_id": "f975f601-8e8b-41a4-abc4-3418d39f0737",
+      "history": [
+        {
+          "role": "user",
+          "content": "สนใจ product-a ครับ",
+          "created_at": "2026-09-17T17:12:30.021885+00:00"
+        }
+      ]
+    },
+    "b": {
+      "session_id": "901f6194-3fce-4cc8-8b84-5a78f709b15a",
+      "thread_id": "5e7dec28-d3e0-41d1-b05e-25560342a3bc",
+      "history": [
+        {
+          "role": "user",
+          "content": "สนใจ product-b ครับ",
+          "created_at": "2026-09-17T17:12:30.149239+00:00"
+        }
+      ]
+    },
+    "cross_session_content_check": true,
+    "restart_resume": true
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "executed_at": "2026-09-19T16:11:15.396206+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "requests": 7,
+  "usage": [
+    {
+      "input_tokens": 3987,
+      "output_tokens": 189,
+      "total_tokens": 4176,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 3312,
+      "output_tokens": 417,
+      "total_tokens": 3729,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 2407,
+      "output_tokens": 177,
+      "total_tokens": 2584,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 2442,
+      "output_tokens": 242,
+      "total_tokens": 2684,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 2500,
+      "output_tokens": 240,
+      "total_tokens": 2740,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 2500,
+      "output_tokens": 238,
+      "total_tokens": 2738,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    },
+    {
+      "input_tokens": 1958,
+      "output_tokens": 172,
+      "total_tokens": 2130,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    }
+  ],
+  "results": [
+    {
+      "query": "คุ้มตลอดชีพ ซีไอ พลัส คุ้มครองถึงอายุเท่าไร",
+      "expected_doc": "insurex-khum-talodcheep-ci-plus",
+      "answer": "คุ้มตลอดชีพ ซีไอ พลัส ให้ความคุ้มครองนานถึงอายุ 90 ปี",
+      "citations": [
+        {
+          "doc_id": "insurex-khum-talodcheep-ci-plus",
+          "page_number": 1,
+          "chunk_id": "insurex-khum-talodcheep-ci-plus-p1-c1",
+          "source_url": "https://cdn.scbprotect.co.th/11_SCB-InsureX_Khum-Talodcheep-CI-Plus_90-5_90-10_90-20_180669.pdf"
+        }
+      ],
+      "error_code": null,
+      "passed": true
+    },
+    {
+      "query": "คุ้มตลอดชีพ พลัส คุ้มครองถึงอายุเท่าไร",
+      "expected_doc": "insurex-khum-talodcheep-plus",
+      "answer": "คุ้มตลอดชีพ พลัส มีระยะเวลาคุ้มครองชีวิตตลอดสัญญาจนถึงอายุ 99 ปี หรือรับเงินก้อนเมื่อมีชีวิตอยู่จนครบกำหนดสัญญา (อายุครบ 99 ปี)",
+      "citations": [
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page_number": 1,
+          "chunk_id": "insurex-khum-talodcheep-plus-p1-c0",
+          "source_url": "https://cdn.scbprotect.co.th/04_SCB-InsureX_Khum-Talodcheep-Plus_180669.pdf"
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page_number": 3,
+          "chunk_id": "insurex-khum-talodcheep-plus-p3-c0",
+          "source_url": "https://cdn.scbprotect.co.th/04_SCB-InsureX_Khum-Talodcheep-Plus_180669.pdf"
+        },
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page_number": 4,
+          "chunk_id": "insurex-khum-talodcheep-plus-p4-c1",
+          "source_url": "https://cdn.scbprotect.co.th/04_SCB-InsureX_Khum-Talodcheep-Plus_180669.pdf"
+        }
+      ],
+      "error_code": null,
+      "passed": true
+    },
+    {
+      "query": "คุ้มออมสุข 25/15 ออมกี่ปี",
+      "expected_doc": "insurex-khum-aomsook",
+      "answer": "แผนคุ้มออมสุข 25/15 มีระยะเวลาชำระเบี้ยประกันภัย (หรือระยะเวลาออม) 15 ปี",
+      "citations": [
+        {
+          "doc_id": "insurex-khum-aomsook",
+          "page_number": 2,
+          "chunk_id": "insurex-khum-aomsook-p2-c0",
+          "source_url": "https://cdn.scbprotect.co.th/09_SCB-InsureX_Khum-Aomsook_25-15_180669.pdf"
+        }
+      ],
+      "error_code": null,
+      "passed": true
+    },
+    {
+      "query": "คุ้มมั่นใจชัวร์ อายุรับประกันภัยเท่าไร",
+      "expected_doc": "insurex-khum-manjai-sure-term",
+      "answer": "ไม่พบข้อมูลนี้ในเอกสารผลิตภัณฑ์ที่ระบบมี",
+      "citations": [],
+      "error_code": null,
+      "passed": false
+    },
+    {
+      "query": "ตลอดชีพ 90/20 อายุรับประกันภัยเท่าไร",
+      "expected_doc": "insurex-whole-life-90-20",
+      "answer": "อายุรับประกันภัยของแบบประกันภัยตลอดชีพ 90/20 คือ 1 เดือน 1 วัน – 65 ปี",
+      "citations": [
+        {
+          "doc_id": "insurex-whole-life-90-20",
+          "page_number": 2,
+          "chunk_id": "insurex-whole-life-90-20-p2-c0",
+          "source_url": "https://cdn.scbprotect.co.th/14_SCB-InsureX_Whole-Life_90-20_180669.pdf"
+        }
+      ],
+      "error_code": null,
+      "passed": true
+    },
+    {
+      "query": "สูตรทำผัดไทย",
+      "expected_doc": null,
+      "answer": "ไม่พบข้อมูลนี้ในเอกสารผลิตภัณฑ์ที่ระบบมี",
+      "citations": [],
+      "error_code": null,
+      "passed": true
+    }
+  ],
+  "note": "Citation and service checks; factual text still requires review."
+}

@@ -1,0 +1,135 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{},\"activeSectionIndex\":0,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"useEnhancedTooltips\":false},\"objects\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "filters": "[]",
+  "layoutOptimization": 0,
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Dashboard",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "Overview",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4d88e71168cc50711b00\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1005.5384615384615,\"y\":190.76923076923077,\"z\":7000,\"width\":274.46153846153845,\"height\":252.30769230769232,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Campaign.response_label\",\"active\":true}],\"Y\":[{\"queryRef\":\"Campaign.Visible Response Records\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"response_label\"},\"Name\":\"Campaign.response_label\",\"NativeReferenceName\":\"response_label\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Visible Response Records\"},\"Name\":\"Campaign.Visible Response Records\",\"NativeReferenceName\":\"Visible Response Records\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Visible Response Records\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Campaign response by outcome'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 252.31,
+          "width": 274.46,
+          "x": 1005.54,
+          "y": 190.77,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"915ea3f0c5095a0a72be\",\"layouts\":[{\"id\":0,\"position\":{\"x\":875.0769230769231,\"y\":0,\"z\":10000,\"width\":404.9230769230769,\"height\":67.6923076923077,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign.customer_segment\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"customer_segment\"},\"Name\":\"Campaign.customer_segment\",\"NativeReferenceName\":\"customer_segment\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2023-01-01T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"date\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"header\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"slider\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"foreground\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.69,
+          "width": 404.92,
+          "x": 875.08,
+          "y": 0.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"a75dc4b29d4a9581b808\",\"layouts\":[{\"id\":0,\"position\":{\"x\":592,\"y\":190.76923076923077,\"z\":9000,\"width\":413.53846153846155,\"height\":252.30769230769232,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Campaign.income_band\",\"active\":true}],\"Y\":[{\"queryRef\":\"Campaign.Visible Response Records\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"income_band\"},\"Name\":\"Campaign.income_band\",\"NativeReferenceName\":\"income_band\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Visible Response Records\"},\"Name\":\"Campaign.Visible Response Records\",\"NativeReferenceName\":\"Visible Response Records\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Visible Response Records\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Income bands from campaign financial features'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 252.31,
+          "width": 413.54,
+          "x": 592.00,
+          "y": 190.77,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"accepted\",\"layouts\":[{\"id\":0,\"position\":{\"x\":688.0000000000002,\"y\":76.07692307692308,\"z\":1000,\"width\":220,\"height\":100,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign.Accepted Records\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Accepted Records\"},\"Name\":\"Campaign.Accepted Records\",\"NativeReferenceName\":\"Accepted Records\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Accepted records'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.00,
+          "width": 220.00,
+          "x": 688.00,
+          "y": 76.08,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b7f90c14b009ab9d3a23\",\"layouts\":[{\"id\":0,\"position\":{\"x\":688,\"y\":4.923076923076923,\"z\":12000,\"width\":146.46153846153845,\"height\":73.84615384615384,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign.main_occupation\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"main_occupation\"},\"Name\":\"Campaign.main_occupation\",\"NativeReferenceName\":\"main_occupation\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 73.85,
+          "width": 146.46,
+          "x": 688.00,
+          "y": 4.92,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"cfae4e45e3aa9103a75c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":397.53846153846155,\"z\":8000,\"width\":582.1538461538462,\"height\":275.6923076923077,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Campaign.main_occupation\",\"active\":true}],\"Y\":[{\"queryRef\":\"Campaign.Accepted Records\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"main_occupation\"},\"Name\":\"Campaign.main_occupation\",\"NativeReferenceName\":\"main_occupation\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Accepted Records\"},\"Name\":\"Campaign.Accepted Records\",\"NativeReferenceName\":\"Accepted Records\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Accepted Records\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Accepted records by occupation'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 275.69,
+          "width": 582.15,
+          "x": 0.00,
+          "y": 397.54,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"d38cddcf266664a3979b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":5000,\"width\":504.61538461538464,\"height\":157.53846153846155,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign.campaign_month\"},{\"queryRef\":\"Campaign.customer_segment\"},{\"queryRef\":\"Campaign.income_band\"},{\"queryRef\":\"Avg(Campaign.age)\"},{\"queryRef\":\"Campaign.gender\"},{\"queryRef\":\"Campaign.main_occupation\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"campaign_month\"},\"Name\":\"Campaign.campaign_month\",\"NativeReferenceName\":\"campaign_month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"customer_segment\"},\"Name\":\"Campaign.customer_segment\",\"NativeReferenceName\":\"customer_segment\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"income_band\"},\"Name\":\"Campaign.income_band\",\"NativeReferenceName\":\"income_band\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"age\"},\"Name\":\"Avg(Campaign.age)\",\"NativeReferenceName\":\"age1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"gender\"},\"Name\":\"Campaign.gender\",\"NativeReferenceName\":\"gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"main_occupation\"},\"Name\":\"Campaign.main_occupation\",\"NativeReferenceName\":\"main_occupation\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Customer detail'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 157.54,
+          "width": 504.62,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"f91245f6d7d707659d4b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":518.1538461538462,\"y\":2.4615384615384617,\"z\":11000,\"width\":146.46153846153845,\"height\":73.84615384615384,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign.campaign_month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"campaign_month\"},\"Name\":\"Campaign.campaign_month\",\"NativeReferenceName\":\"campaign_month\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 73.85,
+          "width": 146.46,
+          "x": 518.15,
+          "y": 2.46,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"fcad946fe8363d4e26eb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":849.2307692307694,\"y\":76.07692307692308,\"z\":6000,\"width\":259.6923076923077,\"height\":99.6923076923077,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign.Missing Rows\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Missing Rows\"},\"Name\":\"Campaign.Missing Rows\",\"NativeReferenceName\":\"Missing Rows\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Rows with missing values'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 99.69,
+          "width": 259.69,
+          "x": 849.23,
+          "y": 76.08,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"month\",\"layouts\":[{\"id\":0,\"position\":{\"x\":592,\"y\":457.84615384615387,\"z\":4000,\"width\":688,\"height\":215.3846153846154,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Campaign.campaign_month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Campaign.Accepted Records\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"campaign_month\"},\"Name\":\"Campaign.campaign_month\",\"NativeReferenceName\":\"campaign_month\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Accepted Records\"},\"Name\":\"Campaign.Accepted Records\",\"NativeReferenceName\":\"Accepted Records\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Accepted records by campaign month'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 215.38,
+          "width": 688.00,
+          "x": 592.00,
+          "y": 457.85,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"rate\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1059.6923076923076,\"y\":76.07692307692308,\"z\":2000,\"width\":220,\"height\":100,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign.Offer Acceptance Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Offer Acceptance Rate\"},\"Name\":\"Campaign.Offer Acceptance Rate\",\"NativeReferenceName\":\"Offer Acceptance Rate\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Offer acceptance rate'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.00,
+          "width": 220.00,
+          "x": 1059.69,
+          "y": 76.08,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"segment\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":208,\"z\":3000,\"width\":582.1538461538462,\"height\":178.46153846153845,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Campaign.customer_segment\",\"active\":true}],\"Y\":[{\"queryRef\":\"Campaign.Accepted Records\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"customer_segment\"},\"Name\":\"Campaign.customer_segment\",\"NativeReferenceName\":\"customer_segment\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Accepted Records\"},\"Name\":\"Campaign.Accepted Records\",\"NativeReferenceName\":\"Accepted Records\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Accepted Records\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Accepted records by customer segment'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 178.46,
+          "width": 582.15,
+          "x": 0.00,
+          "y": 208.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"total\",\"layouts\":[{\"id\":0,\"position\":{\"x\":505.8461538461526,\"y\":76.07692307692308,\"z\":0,\"width\":220,\"height\":100,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign.Total Rows\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Rows\"},\"Name\":\"Campaign.Total Rows\",\"NativeReferenceName\":\"Total Rows\"}]},\"columnProperties\":{\"Campaign.Total Rows\":{\"formatString\":\"0\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total records'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.00,
+          "width": 220.00,
+          "x": 505.85,
+          "y": 76.08,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

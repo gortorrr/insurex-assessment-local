@@ -1,0 +1,35 @@
+{
+  "version": "analysis-contract-2026-09-18-r1",
+  "grain": "one supplied campaign-record row",
+  "label_mapping": {
+    "0": "Reject Offer",
+    "1": "Accept PA",
+    "2": "Accept Life"
+  },
+  "valid_label_set": [0, 1, 2],
+  "acceptance": {
+    "metric_id": "campaign_acceptance_rate",
+    "numerator": "label in {1,2}",
+    "denominator": "rows with label in {0,1,2}",
+    "filter_semantics": "month/segment/occupation filters apply; response-label slicer changes detail view only",
+    "null_policy": "invalid/missing labels excluded from rate denominator"
+  },
+  "pair_quality": {
+    "equal_non_null": "both values non-null and equal",
+    "shared_missing": "both values null",
+    "reported_separately": true
+  },
+  "income_band": {
+    "missing": "missing",
+    "negative": "negative",
+    "zero": "zero",
+    "positive_boundaries": [
+      "0 < x <= 15000",
+      "15000 < x <= 30000",
+      "30000 < x <= 50000",
+      "50000 < x <= 100000",
+      "x > 100000"
+    ]
+  },
+  "financial_limit": "financial features are not premium/payment/revenue"
+}

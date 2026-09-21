@@ -1,0 +1,1823 @@
+{
+  "generated_at": "2026-09-21T01:10:01.204961+07:00",
+  "source_files": {
+    "csv": {
+      "path": "analysis\\data\\raw\\dsc_test_case.csv",
+      "bytes": 33109044,
+      "sha256": "1680ac97057e66d159faafaf3b7b39047755ccfbc4f8c8166fe5c2e4e3323990"
+    },
+    "dictionary": {
+      "path": "analysis\\data\\raw\\data definition.xlsx",
+      "bytes": 11645,
+      "sha256": "5473b7cd3e6ee72c6dd9e062932ea45cbac86fa3e202728e5391965ad65a886d"
+    }
+  },
+  "row_count": 215993,
+  "column_count": 26,
+  "columns": [
+    "campaign_month",
+    "marital_sta",
+    "main_occupation",
+    "customer_segment",
+    "gender",
+    "have_acc_planet",
+    "have_cc",
+    "scb_payroll",
+    "num_children",
+    "age",
+    "income",
+    "maxosdc_last_30d",
+    "dcspend_last_30d",
+    "easypymt_last_30d",
+    "savacc_bal",
+    "currentacc_bal",
+    "avg_savaccbal_30d",
+    "avg_currentaccbal_30d",
+    "mob",
+    "inflow30d",
+    "outflow30d",
+    "inflow1_15",
+    "outflow1_15",
+    "net_flow_30d",
+    "net_flow_15d",
+    "label"
+  ],
+  "dictionary_sheet_names": [
+    "Data Definition"
+  ],
+  "dictionary_definition_count": 26,
+  "dictionary_coverage": {
+    "csv_columns_missing_from_dictionary": [],
+    "dictionary_fields_missing_from_csv": [],
+    "all_csv_columns_documented": true,
+    "all_dictionary_fields_present": true
+  },
+  "grain": "one supplied campaign dataset record per row; no customer/policy/transaction identifier",
+  "label_mapping": {
+    "0": "Reject Offer",
+    "1": "Accept Offer in PA Insurance Product",
+    "2": "Accept Offer in Life Insurance Product"
+  },
+  "rows_with_any_missing": 5535,
+  "missing_patterns_top20": [
+    {
+      "pattern": "00000000000000000000000000",
+      "rows": 210458
+    },
+    {
+      "pattern": "01000000000000000000000000",
+      "rows": 3134
+    },
+    {
+      "pattern": "01111111111111111111111110",
+      "rows": 1500
+    },
+    {
+      "pattern": "00000100001111111111111110",
+      "rows": 900
+    },
+    {
+      "pattern": "01000100001111111111111110",
+      "rows": 1
+    }
+  ],
+  "exact_duplicate_excess": 2173,
+  "duplicate_rows_in_groups": 2500,
+  "columns_profile": {
+    "campaign_month": {
+      "observed_dtype": "object",
+      "declared_type": "string",
+      "rows": 215993,
+      "non_null": 215993,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_non_null": 12,
+      "cardinality_ratio": 5.555735602542675e-05,
+      "top_values": [
+        {
+          "value": "Oct",
+          "count": 23625
+        },
+        {
+          "value": "Dec",
+          "count": 23541
+        },
+        {
+          "value": "Jan",
+          "count": 22282
+        },
+        {
+          "value": "Feb",
+          "count": 22264
+        },
+        {
+          "value": "Nov",
+          "count": 22001
+        },
+        {
+          "value": "Mar",
+          "count": 21937
+        },
+        {
+          "value": "Apr",
+          "count": 21933
+        },
+        {
+          "value": "May",
+          "count": 14672
+        },
+        {
+          "value": "Jul",
+          "count": 11242
+        },
+        {
+          "value": "Sep",
+          "count": 11210
+        }
+      ],
+      "text": {
+        "empty_string_count": 0,
+        "leading_or_trailing_whitespace_count": 0,
+        "min_length": 3,
+        "max_length": 3,
+        "mean_length": 3.0
+      }
+    },
+    "marital_sta": {
+      "observed_dtype": "object",
+      "declared_type": "string",
+      "rows": 215993,
+      "non_null": 211358,
+      "null_count": 4635,
+      "null_rate": 0.021459028764821083,
+      "distinct_non_null": 8,
+      "cardinality_ratio": 3.70382373502845e-05,
+      "top_values": [
+        {
+          "value": "โสด",
+          "count": 152535
+        },
+        {
+          "value": "สมรส",
+          "count": 45892
+        },
+        {
+          "value": "สมรสจด ทะเบียน",
+          "count": 6941
+        },
+        {
+          "value": "<MISSING>",
+          "count": 4635
+        },
+        {
+          "value": "หย่าร้าง",
+          "count": 2627
+        },
+        {
+          "value": "อื่นๆ",
+          "count": 1452
+        },
+        {
+          "value": "ม่าย",
+          "count": 946
+        },
+        {
+          "value": "สมรสไม่ จดทะเบียน",
+          "count": 854
+        },
+        {
+          "value": "แยกกันอยู่",
+          "count": 111
+        }
+      ],
+      "text": {
+        "empty_string_count": 0,
+        "leading_or_trailing_whitespace_count": 0,
+        "min_length": 3,
+        "max_length": 17,
+        "mean_length": 3.7189744414689767
+      }
+    },
+    "main_occupation": {
+      "observed_dtype": "object",
+      "declared_type": "string",
+      "rows": 215993,
+      "non_null": 214493,
+      "null_count": 1500,
+      "null_rate": 0.006944669503178344,
+      "distinct_non_null": 10,
+      "cardinality_ratio": 4.629779668785563e-05,
+      "top_values": [
+        {
+          "value": "Salary man",
+          "count": 102885
+        },
+        {
+          "value": "Self-employed",
+          "count": 56359
+        },
+        {
+          "value": "Freelance",
+          "count": 19070
+        },
+        {
+          "value": "Student",
+          "count": 17295
+        },
+        {
+          "value": "Unemployed",
+          "count": 6857
+        },
+        {
+          "value": "Government",
+          "count": 6063
+        },
+        {
+          "value": "Housewife",
+          "count": 4249
+        },
+        {
+          "value": "<MISSING>",
+          "count": 1500
+        },
+        {
+          "value": "Professional",
+          "count": 1412
+        },
+        {
+          "value": "Entertainer",
+          "count": 244
+        }
+      ],
+      "text": {
+        "empty_string_count": 0,
+        "leading_or_trailing_whitespace_count": 0,
+        "min_length": 7,
+        "max_length": 13,
+        "mean_length": 10.452779344780483
+      }
+    },
+    "customer_segment": {
+      "observed_dtype": "object",
+      "declared_type": "string",
+      "rows": 215993,
+      "non_null": 214493,
+      "null_count": 1500,
+      "null_rate": 0.006944669503178344,
+      "distinct_non_null": 3,
+      "cardinality_ratio": 1.3889339006356687e-05,
+      "top_values": [
+        {
+          "value": "Lower Mass",
+          "count": 105309
+        },
+        {
+          "value": "Mass",
+          "count": 97738
+        },
+        {
+          "value": "Upper Mass",
+          "count": 11446
+        },
+        {
+          "value": "<MISSING>",
+          "count": 1500
+        }
+      ],
+      "text": {
+        "empty_string_count": 0,
+        "leading_or_trailing_whitespace_count": 0,
+        "min_length": 4,
+        "max_length": 10,
+        "mean_length": 7.265980707995133
+      }
+    },
+    "gender": {
+      "observed_dtype": "object",
+      "declared_type": "string",
+      "rows": 215993,
+      "non_null": 214493,
+      "null_count": 1500,
+      "null_rate": 0.006944669503178344,
+      "distinct_non_null": 2,
+      "cardinality_ratio": 9.259559337571125e-06,
+      "top_values": [
+        {
+          "value": "Female",
+          "count": 121275
+        },
+        {
+          "value": "Male",
+          "count": 93218
+        },
+        {
+          "value": "<MISSING>",
+          "count": 1500
+        }
+      ],
+      "text": {
+        "empty_string_count": 0,
+        "leading_or_trailing_whitespace_count": 0,
+        "min_length": 4,
+        "max_length": 6,
+        "mean_length": 5.130806133533495
+      }
+    },
+    "have_acc_planet": {
+      "observed_dtype": "object",
+      "declared_type": "string",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 2,
+      "cardinality_ratio": 9.259559337571125e-06,
+      "top_values": [
+        {
+          "value": "N",
+          "count": 210167
+        },
+        {
+          "value": "Y",
+          "count": 3425
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        }
+      ],
+      "text": {
+        "empty_string_count": 0,
+        "leading_or_trailing_whitespace_count": 0,
+        "min_length": 1,
+        "max_length": 1,
+        "mean_length": 1.0
+      }
+    },
+    "have_cc": {
+      "observed_dtype": "object",
+      "declared_type": "string",
+      "rows": 215993,
+      "non_null": 214493,
+      "null_count": 1500,
+      "null_rate": 0.006944669503178344,
+      "distinct_non_null": 2,
+      "cardinality_ratio": 9.259559337571125e-06,
+      "top_values": [
+        {
+          "value": "N",
+          "count": 193066
+        },
+        {
+          "value": "Y",
+          "count": 21427
+        },
+        {
+          "value": "<MISSING>",
+          "count": 1500
+        }
+      ],
+      "text": {
+        "empty_string_count": 0,
+        "leading_or_trailing_whitespace_count": 0,
+        "min_length": 1,
+        "max_length": 1,
+        "mean_length": 1.0
+      }
+    },
+    "scb_payroll": {
+      "observed_dtype": "object",
+      "declared_type": "string",
+      "rows": 215993,
+      "non_null": 214493,
+      "null_count": 1500,
+      "null_rate": 0.006944669503178344,
+      "distinct_non_null": 2,
+      "cardinality_ratio": 9.259559337571125e-06,
+      "top_values": [
+        {
+          "value": "N",
+          "count": 170729
+        },
+        {
+          "value": "Y",
+          "count": 43764
+        },
+        {
+          "value": "<MISSING>",
+          "count": 1500
+        }
+      ],
+      "text": {
+        "empty_string_count": 0,
+        "leading_or_trailing_whitespace_count": 0,
+        "min_length": 1,
+        "max_length": 1,
+        "mean_length": 1.0
+      }
+    },
+    "num_children": {
+      "observed_dtype": "float64",
+      "declared_type": "integer",
+      "rows": 215993,
+      "non_null": 214493,
+      "null_count": 1500,
+      "null_rate": 0.006944669503178344,
+      "distinct_non_null": 9,
+      "cardinality_ratio": 4.166801701907006e-05,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 207701
+        },
+        {
+          "value": 1.0,
+          "count": 5208
+        },
+        {
+          "value": "<MISSING>",
+          "count": 1500
+        },
+        {
+          "value": 2.0,
+          "count": 1373
+        },
+        {
+          "value": 3.0,
+          "count": 179
+        },
+        {
+          "value": 4.0,
+          "count": 24
+        },
+        {
+          "value": 5.0,
+          "count": 5
+        },
+        {
+          "value": 10.0,
+          "count": 1
+        },
+        {
+          "value": 20.0,
+          "count": 1
+        },
+        {
+          "value": 21.0,
+          "count": 1
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 21.0,
+        "mean": 0.04038826441888547,
+        "median": 0.0,
+        "std": 0.25005003383234126,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.95": 0.0,
+          "0.99": 1.0
+        },
+        "zero_count": 207701,
+        "negative_count": 0
+      }
+    },
+    "age": {
+      "observed_dtype": "float64",
+      "declared_type": "double",
+      "rows": 215993,
+      "non_null": 214493,
+      "null_count": 1500,
+      "null_rate": 0.006944669503178344,
+      "distinct_non_null": 39,
+      "cardinality_ratio": 0.00018056140708263695,
+      "top_values": [
+        {
+          "value": 29.0,
+          "count": 10063
+        },
+        {
+          "value": 28.0,
+          "count": 9913
+        },
+        {
+          "value": 30.0,
+          "count": 9345
+        },
+        {
+          "value": 27.0,
+          "count": 9137
+        },
+        {
+          "value": 31.0,
+          "count": 8656
+        },
+        {
+          "value": 32.0,
+          "count": 8504
+        },
+        {
+          "value": 33.0,
+          "count": 8494
+        },
+        {
+          "value": 26.0,
+          "count": 8460
+        },
+        {
+          "value": 34.0,
+          "count": 8161
+        },
+        {
+          "value": 25.0,
+          "count": 8040
+        }
+      ],
+      "numeric": {
+        "min": 23.0,
+        "max": 61.0,
+        "mean": 37.78451511238129,
+        "median": 36.0,
+        "std": 9.58973664486578,
+        "quantiles": {
+          "0.01": 24.0,
+          "0.05": 25.0,
+          "0.25": 30.0,
+          "0.5": 36.0,
+          "0.75": 45.0,
+          "0.95": 56.0,
+          "0.99": 59.0
+        },
+        "zero_count": 0,
+        "negative_count": 0
+      }
+    },
+    "income": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 129477,
+      "cardinality_ratio": 0.5994499821753483,
+      "top_values": [
+        {
+          "value": 4364.98,
+          "count": 16495
+        },
+        {
+          "value": 15140.15,
+          "count": 11603
+        },
+        {
+          "value": 25000.0,
+          "count": 2908
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 15000.0,
+          "count": 2116
+        },
+        {
+          "value": 38798.51,
+          "count": 1334
+        },
+        {
+          "value": 16000.0,
+          "count": 1266
+        },
+        {
+          "value": 18000.0,
+          "count": 1132
+        },
+        {
+          "value": 17000.0,
+          "count": 1105
+        },
+        {
+          "value": 20000.0,
+          "count": 1078
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 199625.67,
+        "mean": 16867.350480682795,
+        "median": 12252.61,
+        "std": 19992.802475134464,
+        "quantiles": {
+          "0.01": 79.4,
+          "0.05": 524.0,
+          "0.25": 4364.98,
+          "0.5": 12252.61,
+          "0.75": 21166.5875,
+          "0.95": 53276.069999999956,
+          "0.99": 101655.62279999995
+        },
+        "zero_count": 342,
+        "negative_count": 0
+      }
+    },
+    "maxosdc_last_30d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 76455,
+      "cardinality_ratio": 0.35396980457700017,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 128422
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 1000.0,
+          "count": 155
+        },
+        {
+          "value": 100.0,
+          "count": 144
+        },
+        {
+          "value": 500.0,
+          "count": 143
+        },
+        {
+          "value": 200.0,
+          "count": 120
+        },
+        {
+          "value": 2000.0,
+          "count": 99
+        },
+        {
+          "value": 1.0,
+          "count": 91
+        },
+        {
+          "value": 3000.0,
+          "count": 91
+        },
+        {
+          "value": 10000.0,
+          "count": 83
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 4374289.15,
+        "mean": 11354.821829843813,
+        "median": 0.0,
+        "std": 58449.12421442441,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 4037.855,
+          "0.95": 43398.89799999993,
+          "0.99": 210890.42759999918
+        },
+        "zero_count": 128422,
+        "negative_count": 0
+      }
+    },
+    "dcspend_last_30d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 4335,
+      "cardinality_ratio": 0.020070094864185414,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 207065
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 99.0,
+          "count": 116
+        },
+        {
+          "value": 419.0,
+          "count": 61
+        },
+        {
+          "value": 169.0,
+          "count": 59
+        },
+        {
+          "value": 35.0,
+          "count": 58
+        },
+        {
+          "value": 500.0,
+          "count": 56
+        },
+        {
+          "value": 1000.0,
+          "count": 51
+        },
+        {
+          "value": 300.0,
+          "count": 45
+        },
+        {
+          "value": 159.0,
+          "count": 33
+        }
+      ],
+      "numeric": {
+        "min": -87030.88,
+        "max": 1852987.91,
+        "mean": 165.36634630510505,
+        "median": 0.0,
+        "std": 7403.789350544446,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.95": 0.0,
+          "0.99": 2034.3302999999871
+        },
+        "zero_count": 207065,
+        "negative_count": 17
+      }
+    },
+    "easypymt_last_30d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 10545,
+      "cardinality_ratio": 0.048821026607343755,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 45616
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 100.0,
+          "count": 568
+        },
+        {
+          "value": 200.0,
+          "count": 515
+        },
+        {
+          "value": 500.0,
+          "count": 450
+        },
+        {
+          "value": 300.0,
+          "count": 401
+        },
+        {
+          "value": 1000.0,
+          "count": 343
+        },
+        {
+          "value": 50.0,
+          "count": 306
+        },
+        {
+          "value": 150.0,
+          "count": 264
+        },
+        {
+          "value": 120.0,
+          "count": 254
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 2000000.0,
+        "mean": 1196.3680287651223,
+        "median": 373.0,
+        "std": 8443.915440635554,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 88.0,
+          "0.5": 373.0,
+          "0.75": 925.0,
+          "0.95": 3932.0,
+          "0.99": 13192.089999999997
+        },
+        "zero_count": 45616,
+        "negative_count": 0
+      }
+    },
+    "savacc_bal": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 130874,
+      "cardinality_ratio": 0.6059177843726417,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 22235
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 0.01,
+          "count": 656
+        },
+        {
+          "value": 0.02,
+          "count": 436
+        },
+        {
+          "value": 0.03,
+          "count": 374
+        },
+        {
+          "value": 0.05,
+          "count": 361
+        },
+        {
+          "value": 0.07,
+          "count": 328
+        },
+        {
+          "value": 0.04,
+          "count": 321
+        },
+        {
+          "value": 0.08,
+          "count": 309
+        },
+        {
+          "value": 0.09,
+          "count": 289
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 4793828.33,
+        "mean": 20856.29832699727,
+        "median": 800.655,
+        "std": 94906.66899772905,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 7.35,
+          "0.5": 800.655,
+          "0.75": 7557.887500000001,
+          "0.95": 84971.56949999998,
+          "0.99": 415511.39649999974
+        },
+        "zero_count": 22235,
+        "negative_count": 0
+      }
+    },
+    "currentacc_bal": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 2,
+      "cardinality_ratio": 9.259559337571125e-06,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 213332
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 1.0,
+          "count": 260
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.0012172740552080603,
+        "median": 0.0,
+        "std": 0.034868294928687406,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0
+        },
+        "zero_count": 213332,
+        "negative_count": 0
+      }
+    },
+    "avg_savaccbal_30d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 150382,
+      "cardinality_ratio": 0.6962355261513105,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 15814
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 0.01,
+          "count": 425
+        },
+        {
+          "value": 0.02,
+          "count": 277
+        },
+        {
+          "value": 0.03,
+          "count": 256
+        },
+        {
+          "value": 0.04,
+          "count": 199
+        },
+        {
+          "value": 0.05,
+          "count": 185
+        },
+        {
+          "value": 0.07,
+          "count": 170
+        },
+        {
+          "value": 0.08,
+          "count": 161
+        },
+        {
+          "value": 0.1,
+          "count": 158
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 2471112.58,
+        "mean": 15175.681839535187,
+        "median": 992.9200000000001,
+        "std": 69797.98489929135,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 122.92,
+          "0.5": 992.9200000000001,
+          "0.75": 4643.6224999999995,
+          "0.95": 62285.97999999994,
+          "0.99": 305169.1511999997
+        },
+        "zero_count": 15814,
+        "negative_count": 0
+      }
+    },
+    "avg_currentaccbal_30d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 174,
+      "cardinality_ratio": 0.0008055816623686879,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 213413
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 0.2,
+          "count": 2
+        },
+        {
+          "value": 448.25,
+          "count": 2
+        },
+        {
+          "value": 10.0,
+          "count": 2
+        },
+        {
+          "value": 0.23,
+          "count": 2
+        },
+        {
+          "value": 250.0,
+          "count": 2
+        },
+        {
+          "value": 0.02,
+          "count": 2
+        },
+        {
+          "value": 0.98,
+          "count": 1
+        },
+        {
+          "value": 361.52,
+          "count": 1
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 1232520.06,
+        "mean": 30.42249236862804,
+        "median": 0.0,
+        "std": 3943.840941721182,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0
+        },
+        "zero_count": 213413,
+        "negative_count": 0
+      }
+    },
+    "mob": {
+      "observed_dtype": "float64",
+      "declared_type": "integer",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 436,
+      "cardinality_ratio": 0.0020185839355905053,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 56144
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 65.0,
+          "count": 1909
+        },
+        {
+          "value": 53.0,
+          "count": 1895
+        },
+        {
+          "value": 64.0,
+          "count": 1803
+        },
+        {
+          "value": 43.0,
+          "count": 1794
+        },
+        {
+          "value": 66.0,
+          "count": 1775
+        },
+        {
+          "value": 19.0,
+          "count": 1772
+        },
+        {
+          "value": 16.0,
+          "count": 1754
+        },
+        {
+          "value": 15.0,
+          "count": 1735
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 887.0,
+        "mean": 54.56240870444586,
+        "median": 40.0,
+        "std": 66.37177589754879,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 40.0,
+          "0.75": 77.0,
+          "0.95": 176.0,
+          "0.99": 246.0
+        },
+        "zero_count": 56144,
+        "negative_count": 0
+      }
+    },
+    "inflow30d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 74018,
+      "cardinality_ratio": 0.34268703152416974,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 110005
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 1000.0,
+          "count": 583
+        },
+        {
+          "value": 2000.0,
+          "count": 497
+        },
+        {
+          "value": 500.0,
+          "count": 462
+        },
+        {
+          "value": 5000.0,
+          "count": 372
+        },
+        {
+          "value": 0.01,
+          "count": 370
+        },
+        {
+          "value": 3000.0,
+          "count": 348
+        },
+        {
+          "value": 200.0,
+          "count": 286
+        },
+        {
+          "value": 100.0,
+          "count": 278
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 21471692.25,
+        "mean": 25289.75274734072,
+        "median": 0.0,
+        "std": 122904.7934256893,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 16907.49,
+          "0.95": 106818.76399999985,
+          "0.99": 356322.75869999995
+        },
+        "zero_count": 110005,
+        "negative_count": 0
+      }
+    },
+    "outflow30d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 80606,
+      "cardinality_ratio": 0.373188019982129,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 110963
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 1000.0,
+          "count": 407
+        },
+        {
+          "value": 500.0,
+          "count": 370
+        },
+        {
+          "value": 200.0,
+          "count": 332
+        },
+        {
+          "value": 2000.0,
+          "count": 298
+        },
+        {
+          "value": 100.0,
+          "count": 234
+        },
+        {
+          "value": 5000.0,
+          "count": 221
+        },
+        {
+          "value": 300.0,
+          "count": 210
+        },
+        {
+          "value": 10000.0,
+          "count": 203
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 21471691.0,
+        "mean": 25545.924888338515,
+        "median": 0.0,
+        "std": 121444.27035909436,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 18290.0,
+          "0.95": 106987.59599999998,
+          "0.99": 350906.9443999997
+        },
+        "zero_count": 110963,
+        "negative_count": 0
+      }
+    },
+    "inflow1_15": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 74018,
+      "cardinality_ratio": 0.34268703152416974,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 110005
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 1000.0,
+          "count": 583
+        },
+        {
+          "value": 2000.0,
+          "count": 497
+        },
+        {
+          "value": 500.0,
+          "count": 462
+        },
+        {
+          "value": 5000.0,
+          "count": 372
+        },
+        {
+          "value": 0.01,
+          "count": 370
+        },
+        {
+          "value": 3000.0,
+          "count": 348
+        },
+        {
+          "value": 200.0,
+          "count": 286
+        },
+        {
+          "value": 100.0,
+          "count": 278
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 21471692.25,
+        "mean": 25289.75274734072,
+        "median": 0.0,
+        "std": 122904.7934256893,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 16907.49,
+          "0.95": 106818.76399999985,
+          "0.99": 356322.75869999995
+        },
+        "zero_count": 110005,
+        "negative_count": 0
+      }
+    },
+    "outflow1_15": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(12,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 80606,
+      "cardinality_ratio": 0.373188019982129,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 110963
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 1000.0,
+          "count": 407
+        },
+        {
+          "value": 500.0,
+          "count": 370
+        },
+        {
+          "value": 200.0,
+          "count": 332
+        },
+        {
+          "value": 2000.0,
+          "count": 298
+        },
+        {
+          "value": 100.0,
+          "count": 234
+        },
+        {
+          "value": 5000.0,
+          "count": 221
+        },
+        {
+          "value": 300.0,
+          "count": 210
+        },
+        {
+          "value": 10000.0,
+          "count": 203
+        }
+      ],
+      "numeric": {
+        "min": 0.0,
+        "max": 21471691.0,
+        "mean": 25545.924888338515,
+        "median": 0.0,
+        "std": 121444.27035909436,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 18290.0,
+          "0.95": 106987.59599999998,
+          "0.99": 350906.9443999997
+        },
+        "zero_count": 110963,
+        "negative_count": 0
+      }
+    },
+    "net_flow_30d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(13,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 72928,
+      "cardinality_ratio": 0.3376405716851935,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 113336
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 0.01,
+          "count": 422
+        },
+        {
+          "value": 0.02,
+          "count": 207
+        },
+        {
+          "value": 0.03,
+          "count": 188
+        },
+        {
+          "value": 1.0,
+          "count": 188
+        },
+        {
+          "value": -200.0,
+          "count": 185
+        },
+        {
+          "value": -100.0,
+          "count": 179
+        },
+        {
+          "value": -20.0,
+          "count": 175
+        },
+        {
+          "value": 100.0,
+          "count": 171
+        }
+      ],
+      "numeric": {
+        "min": -1813780.11,
+        "max": 2295697.16,
+        "mean": -256.17214099779017,
+        "median": 0.0,
+        "std": 25228.40940840816,
+        "quantiles": {
+          "0.01": -36704.5127,
+          "0.05": -9100.0,
+          "0.25": -0.16,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.95": 5319.303499999993,
+          "0.99": 36224.3178
+        },
+        "zero_count": 113336,
+        "negative_count": 53850
+      }
+    },
+    "net_flow_15d": {
+      "observed_dtype": "float64",
+      "declared_type": "decimal(13,2)",
+      "rows": 215993,
+      "non_null": 213592,
+      "null_count": 2401,
+      "null_rate": 0.011116100984754136,
+      "distinct_non_null": 72928,
+      "cardinality_ratio": 0.3376405716851935,
+      "top_values": [
+        {
+          "value": 0.0,
+          "count": 113336
+        },
+        {
+          "value": "<MISSING>",
+          "count": 2401
+        },
+        {
+          "value": 0.01,
+          "count": 422
+        },
+        {
+          "value": 0.02,
+          "count": 207
+        },
+        {
+          "value": 0.03,
+          "count": 188
+        },
+        {
+          "value": 1.0,
+          "count": 188
+        },
+        {
+          "value": -200.0,
+          "count": 185
+        },
+        {
+          "value": -100.0,
+          "count": 179
+        },
+        {
+          "value": -20.0,
+          "count": 175
+        },
+        {
+          "value": 100.0,
+          "count": 171
+        }
+      ],
+      "numeric": {
+        "min": -1813780.11,
+        "max": 2295697.16,
+        "mean": -256.17214099779017,
+        "median": 0.0,
+        "std": 25228.40940840816,
+        "quantiles": {
+          "0.01": -36704.5127,
+          "0.05": -9100.0,
+          "0.25": -0.16,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.95": 5319.303499999993,
+          "0.99": 36224.3178
+        },
+        "zero_count": 113336,
+        "negative_count": 53850
+      }
+    },
+    "label": {
+      "observed_dtype": "int64",
+      "declared_type": "integer",
+      "rows": 215993,
+      "non_null": 215993,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_non_null": 3,
+      "cardinality_ratio": 1.3889339006356687e-05,
+      "top_values": [
+        {
+          "value": 0,
+          "count": 213371
+        },
+        {
+          "value": 1,
+          "count": 1634
+        },
+        {
+          "value": 2,
+          "count": 988
+        }
+      ],
+      "numeric": {
+        "min": 0,
+        "max": 2,
+        "mean": 0.01671350460431588,
+        "median": 0.0,
+        "std": 0.15994601100391465,
+        "quantiles": {
+          "0.01": 0.0,
+          "0.05": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.95": 0.0,
+          "0.99": 1.0
+        },
+        "zero_count": 213371,
+        "negative_count": 0
+      }
+    }
+  },
+  "quality_flags": [
+    {
+      "severity": "info",
+      "field": "marital_sta",
+      "count": 4635,
+      "detail": "missing_rate=2.1459%"
+    },
+    {
+      "severity": "info",
+      "field": "main_occupation",
+      "count": 1500,
+      "detail": "missing_rate=0.6945%"
+    },
+    {
+      "severity": "info",
+      "field": "customer_segment",
+      "count": 1500,
+      "detail": "missing_rate=0.6945%"
+    },
+    {
+      "severity": "info",
+      "field": "gender",
+      "count": 1500,
+      "detail": "missing_rate=0.6945%"
+    },
+    {
+      "severity": "info",
+      "field": "have_acc_planet",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "have_cc",
+      "count": 1500,
+      "detail": "missing_rate=0.6945%"
+    },
+    {
+      "severity": "info",
+      "field": "scb_payroll",
+      "count": 1500,
+      "detail": "missing_rate=0.6945%"
+    },
+    {
+      "severity": "info",
+      "field": "num_children",
+      "count": 1500,
+      "detail": "missing_rate=0.6945%"
+    },
+    {
+      "severity": "info",
+      "field": "age",
+      "count": 1500,
+      "detail": "missing_rate=0.6945%"
+    },
+    {
+      "severity": "info",
+      "field": "income",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "maxosdc_last_30d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "dcspend_last_30d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "easypymt_last_30d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "savacc_bal",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "currentacc_bal",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "avg_savaccbal_30d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "avg_currentaccbal_30d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "mob",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "inflow30d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "outflow30d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "inflow1_15",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "outflow1_15",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "net_flow_30d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "info",
+      "field": "net_flow_15d",
+      "count": 2401,
+      "detail": "missing_rate=1.1116%"
+    },
+    {
+      "severity": "warn",
+      "field": "dcspend_last_30d",
+      "count": 17,
+      "detail": "negative financial feature values"
+    },
+    {
+      "severity": "review",
+      "field": "inflow30d=inflow1_15",
+      "count": 213592,
+      "detail": "equal among non-missing values; shared_missing=2401; including_shared_missing=215993"
+    },
+    {
+      "severity": "review",
+      "field": "outflow30d=outflow1_15",
+      "count": 213592,
+      "detail": "equal among non-missing values; shared_missing=2401; including_shared_missing=215993"
+    },
+    {
+      "severity": "review",
+      "field": "net_flow_30d=net_flow_15d",
+      "count": 213592,
+      "detail": "equal among non-missing values; shared_missing=2401; including_shared_missing=215993"
+    },
+    {
+      "severity": "info",
+      "field": "net_flow_30d",
+      "count": 0,
+      "detail": "mismatch versus inflow30d - outflow30d"
+    },
+    {
+      "severity": "info",
+      "field": "net_flow_15d",
+      "count": 0,
+      "detail": "mismatch versus inflow1_15 - outflow1_15"
+    },
+    {
+      "severity": "info",
+      "field": "exact_duplicates",
+      "count": 2173,
+      "detail": "excess rows beyond first exact copy"
+    },
+    {
+      "severity": "info",
+      "field": "label",
+      "count": 0,
+      "detail": "outside expected set {0,1,2}"
+    }
+  ],
+  "observed_business_limits": [
+    "No policy-level, payment-transaction, premium, agent, or contract data is present.",
+    "Month values have no year and cannot support a cross-year trend.",
+    "Financial fields are customer features and are not premium or payment amounts."
+  ]
+}

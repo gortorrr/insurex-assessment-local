@@ -1,0 +1,64 @@
+{
+  "run_id": "7d0410030e2b4b7a",
+  "started_at": "2026-09-19T16:05:18.255288+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "executed": true,
+  "passed": true,
+  "failed": false,
+  "skipped": false,
+  "requests": 1,
+  "failed_attempts": 0,
+  "usage": [
+    {
+      "input_tokens": 3333,
+      "output_tokens": 361,
+      "total_tokens": 3694,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    }
+  ],
+  "corpus": {
+    "manifest_sha256": "6f6e5b36d7b4db599592281466f8cf351e662b461d4a863129dbe7fb1fdad6a8",
+    "embedding_manifest_sha256": "a91103a7603dc3060347d1f80091ef56217e85cf1d11b2a0e4f4549687549808",
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "chroma_path": "chroma_db",
+    "product_id": "khum-talodcheep-ci-plus",
+    "retrieval_top_k": "5",
+    "chunking": "max_characters=1800,overlap=240,max_tokens=400,revision=paragraph-boundary-v4",
+    "fingerprint": "870fd3f1ac2f8421dc40f3e955460b2e3775c22abaad89ffd2a8410301a359c5"
+  },
+  "status": "passed",
+  "assertions": {
+    "answerable_has_text": true,
+    "answerable_has_citations": true,
+    "answerable_citations_have_pdf_urls": true,
+    "no_answer_is_controlled": true,
+    "no_answer_has_no_citations": true,
+    "no_answer_is_not_service_error": true
+  },
+  "answerable": {
+    "answer": "แบบประกันคุ้มตลอดชีพ ซีไอ พลัส ให้ความคุ้มครองนานถึงอายุ 90 ปี และจะได้รับรับเงินก้อนครบกำหนดสัญญา ณ วันครบรอบปีกรมธรรม์ที่ผู้เอาประกันภัยมีอายุครบ 90 ปี",
+    "citations": [
+      {
+        "doc_id": "insurex-khum-talodcheep-ci-plus",
+        "page": 1,
+        "chunk_id": "insurex-khum-talodcheep-ci-plus-p1-c2",
+        "source_url": "https://cdn.scbprotect.co.th/11_SCB-InsureX_Khum-Talodcheep-CI-Plus_90-5_90-10_90-20_180669.pdf"
+      },
+      {
+        "doc_id": "insurex-khum-talodcheep-ci-plus",
+        "page": 2,
+        "chunk_id": "insurex-khum-talodcheep-ci-plus-p2-c0",
+        "source_url": "https://cdn.scbprotect.co.th/11_SCB-InsureX_Khum-Talodcheep-CI-Plus_90-5_90-10_90-20_180669.pdf"
+      }
+    ],
+    "evidence_status": "sufficient"
+  },
+  "no_answer": {
+    "answer": "ไม่พบข้อมูลนี้ในเอกสารผลิตภัณฑ์ที่ระบบมี",
+    "citations": [],
+    "evidence_status": "insufficient",
+    "error_code": null
+  }
+}

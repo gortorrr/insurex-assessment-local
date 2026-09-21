@@ -1,0 +1,92 @@
+{
+  "executed_at": "2026-09-19T17:02:12.766766+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "passed": true,
+  "synthetic_only": true,
+  "turns": [
+    {
+      "session": "A",
+      "step": 1,
+      "answer": "กรุณาแจ้ง ชื่อ, อาชีพ, รายได้พร้อมสกุลเงินและช่วงเวลา, เบอร์โทรศัพท์ เพื่อดำเนินการต่อ\nชื่อ: ยังไม่ระบุ | อาชีพ: ยังไม่ระบุ | รายได้: ยังไม่ระบุ ไม่ทราบสกุลเงิน / ไม่ทราบช่วงเวลา | เบอร์: ยังไม่ระบุ | ผลิตภัณฑ์: khum-talodcheep-plus",
+      "missing": [
+        "name",
+        "occupation",
+        "income",
+        "income_currency",
+        "income_period",
+        "phone"
+      ],
+      "citations": [],
+      "error": null
+    },
+    {
+      "session": "B",
+      "step": 2,
+      "answer": "กรุณาแจ้ง ชื่อ, อาชีพ, รายได้พร้อมสกุลเงินและช่วงเวลา, เบอร์โทรศัพท์ เพื่อดำเนินการต่อ\nชื่อ: ยังไม่ระบุ | อาชีพ: ยังไม่ระบุ | รายได้: ยังไม่ระบุ ไม่ทราบสกุลเงิน / ไม่ทราบช่วงเวลา | เบอร์: ยังไม่ระบุ | ผลิตภัณฑ์: khum-aomsook-25-15",
+      "missing": [
+        "name",
+        "occupation",
+        "income",
+        "income_currency",
+        "income_period",
+        "phone"
+      ],
+      "citations": [],
+      "error": null
+    },
+    {
+      "session": "A",
+      "step": 3,
+      "answer": "กรุณาตรวจสอบข้อมูลที่จะบันทึก แล้วพิมพ์ ‘ยืนยัน’ หากถูกต้อง หรือส่งข้อความแก้ไข\nชื่อ: เอกทดสอบ | อาชีพ: ครู | รายได้: 30000 THB / monthly_thb | เบอร์: 081•••••78 | ผลิตภัณฑ์: khum-talodcheep-plus",
+      "missing": [],
+      "citations": [],
+      "error": null
+    },
+    {
+      "session": "A",
+      "step": 4,
+      "answer": "คุ้มตลอดชีพ พลัส คุ้มครองชีวิตตลอดสัญญาจนถึงอายุ 99 ปี หรือรับเงินก้อนเมื่อมีชีวิตอยู่จนครบกำหนดสัญญา",
+      "missing": [],
+      "citations": [
+        {
+          "doc_id": "insurex-khum-talodcheep-plus",
+          "page": 1,
+          "source_url": "https://cdn.scbprotect.co.th/04_SCB-InsureX_Khum-Talodcheep-Plus_180669.pdf"
+        }
+      ],
+      "error": null
+    },
+    {
+      "session": "A",
+      "step": 5,
+      "answer": "บันทึกข้อมูลผู้สนใจแล้ว (lead_id=1)",
+      "missing": [],
+      "citations": [],
+      "error": null
+    },
+    {
+      "session": "B",
+      "step": 6,
+      "answer": "กรุณาแจ้ง ชื่อ, อาชีพ, รายได้พร้อมสกุลเงินและช่วงเวลา, เบอร์โทรศัพท์ เพื่อดำเนินการต่อ\nชื่อ: ยังไม่ระบุ | อาชีพ: ยังไม่ระบุ | รายได้: ยังไม่ระบุ ไม่ทราบสกุลเงิน / ไม่ทราบช่วงเวลา | เบอร์: ยังไม่ระบุ | ผลิตภัณฑ์: khum-aomsook-25-15",
+      "missing": [
+        "name",
+        "occupation",
+        "income",
+        "income_currency",
+        "income_period",
+        "phone"
+      ],
+      "citations": [],
+      "error": null
+    }
+  ],
+  "lead_counts": {
+    "A": 1,
+    "B": 0
+  },
+  "shared_database": true,
+  "fresh_worker_per_turn": true,
+  "trace_count": 6,
+  "trace_pii_check": true,
+  "requests": 4
+}

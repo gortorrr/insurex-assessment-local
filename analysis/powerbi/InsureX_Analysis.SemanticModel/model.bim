@@ -1,0 +1,341 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      },
+      {
+        "name": "InsureX_MetricContract",
+        "value": "analysis/shared/metric_contract.json"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Campaign\",\"DataRoot\"]"
+      }
+    ],
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DataRoot",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ],
+        "expression": "\"E:\\insurex-assessment-local\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "070985c7-36fa-4c15-add0-b51704aaa0ae"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Campaign",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "InsureX_Source",
+            "value": "analysis/data/raw/dsc_test_case.csv; raw fields=26; derived fields=4"
+          }
+        ],
+        "columns": [
+          {
+            "name": "campaign_month",
+            "dataType": "string",
+            "lineageTag": "5e32c108-8d2b-4e3c-bf6a-d89250d38041",
+            "sortByColumn": "campaign_month_order",
+            "sourceColumn": "campaign_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "marital_sta",
+            "dataType": "string",
+            "lineageTag": "8e46e044-02f3-4728-954d-4237773049da",
+            "sourceColumn": "marital_sta",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "main_occupation",
+            "dataType": "string",
+            "lineageTag": "7549675e-0c20-4c10-a699-08ef94b43991",
+            "sourceColumn": "main_occupation",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_segment",
+            "dataType": "string",
+            "lineageTag": "98877d61-6fbf-4ce7-ba5b-5785a2e621b3",
+            "sourceColumn": "customer_segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "gender",
+            "dataType": "string",
+            "lineageTag": "8146b53e-a755-4bc8-b33a-c3ffa795b0ae",
+            "sourceColumn": "gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "have_acc_planet",
+            "dataType": "string",
+            "lineageTag": "286b0456-94a8-4292-9c9e-cccc2304802e",
+            "sourceColumn": "have_acc_planet",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "have_cc",
+            "dataType": "string",
+            "lineageTag": "d13529de-a1e3-42e4-949b-2592e68c2b34",
+            "sourceColumn": "have_cc",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "scb_payroll",
+            "dataType": "string",
+            "lineageTag": "4a1589df-285a-49e7-8313-20ff13a2a52b",
+            "sourceColumn": "scb_payroll",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "num_children",
+            "dataType": "int64",
+            "lineageTag": "d3f62cf1-f63f-4289-a67a-1c338a91af70",
+            "sourceColumn": "num_children",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "age",
+            "dataType": "double",
+            "lineageTag": "edd0afc3-d4a8-442c-91a1-89ba87d578e6",
+            "sourceColumn": "age",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "income",
+            "dataType": "double",
+            "lineageTag": "ac169881-b169-4c42-9352-76a37a81b942",
+            "sourceColumn": "income",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "maxosdc_last_30d",
+            "dataType": "double",
+            "lineageTag": "61d016a1-edb1-41fa-9309-e0b20dec3850",
+            "sourceColumn": "maxosdc_last_30d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "dcspend_last_30d",
+            "dataType": "double",
+            "lineageTag": "44846be0-b8d2-4673-ac24-21952673bd83",
+            "sourceColumn": "dcspend_last_30d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "easypymt_last_30d",
+            "dataType": "double",
+            "lineageTag": "7e31197a-7d19-461e-9ece-59df68941e68",
+            "sourceColumn": "easypymt_last_30d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "savacc_bal",
+            "dataType": "double",
+            "lineageTag": "5842f527-112f-4336-ab09-4b9d6155f7f1",
+            "sourceColumn": "savacc_bal",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "currentacc_bal",
+            "dataType": "double",
+            "lineageTag": "b7c46b47-163d-4956-8e9e-1382e32a4dd7",
+            "sourceColumn": "currentacc_bal",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "avg_savaccbal_30d",
+            "dataType": "double",
+            "lineageTag": "c825a745-fa0c-458f-8ec7-f9dba444cc9d",
+            "sourceColumn": "avg_savaccbal_30d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "avg_currentaccbal_30d",
+            "dataType": "double",
+            "lineageTag": "31414fc8-9af3-4adc-9973-3a58ed58ec70",
+            "sourceColumn": "avg_currentaccbal_30d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "mob",
+            "dataType": "int64",
+            "lineageTag": "42af3571-daca-49d5-ad90-217b55eb44fd",
+            "sourceColumn": "mob",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "inflow30d",
+            "dataType": "double",
+            "lineageTag": "71d94822-3187-4028-95a1-31e09a2b3bae",
+            "sourceColumn": "inflow30d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "outflow30d",
+            "dataType": "double",
+            "lineageTag": "abaa1501-a304-435c-a55e-0ab3a4a5d966",
+            "sourceColumn": "outflow30d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "inflow1_15",
+            "dataType": "double",
+            "lineageTag": "ce1399c7-03bb-4d26-a244-4bebbd305d84",
+            "sourceColumn": "inflow1_15",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "outflow1_15",
+            "dataType": "double",
+            "lineageTag": "79363b31-5919-4716-b75b-34964be273ef",
+            "sourceColumn": "outflow1_15",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "net_flow_30d",
+            "dataType": "double",
+            "lineageTag": "f17b6cee-9f0a-457f-8208-981ceabd8f56",
+            "sourceColumn": "net_flow_30d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "net_flow_15d",
+            "dataType": "double",
+            "lineageTag": "060994cc-a436-4a59-b9a7-a57f373ee804",
+            "sourceColumn": "net_flow_15d",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "label",
+            "dataType": "int64",
+            "lineageTag": "05da8c82-7a1d-4160-b7cd-bfdaae229eef",
+            "sourceColumn": "label",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Has Missing Original Field",
+            "dataType": "boolean",
+            "lineageTag": "fb391fa6-b926-41f0-9c3d-504068bbe7eb",
+            "sourceColumn": "Has Missing Original Field",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "income_band",
+            "dataType": "string",
+            "lineageTag": "4f1b202e-af1e-4a0b-92f0-41a3abd5969d",
+            "sourceColumn": "income_band",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "campaign_month_order",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "2ea54d18-d0f8-44ea-922e-cdc8202f2b80",
+            "sourceColumn": "campaign_month_order",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "response_label",
+            "dataType": "string",
+            "lineageTag": "7df2c20b-c384-48a1-bfe0-f3d6e87e95de",
+            "sourceColumn": "response_label",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "5c5d0030-801f-48fa-af57-77adb8245983",
+        "measures": [
+          {
+            "name": "Total Rows",
+            "expression": "COUNTROWS('Campaign')",
+            "formatString": "0",
+            "lineageTag": "599c76bf-727c-42d1-9ff6-6e55238350ed"
+          },
+          {
+            "name": "Valid Label Records",
+            "expression": "CALCULATE(COUNTROWS('Campaign'), REMOVEFILTERS('Campaign'[label]), 'Campaign'[label] IN { 0, 1, 2 })",
+            "formatString": "0",
+            "lineageTag": "13923dbc-c78f-44c4-ae98-1e4e6e58acf5"
+          },
+          {
+            "name": "Accepted Records",
+            "expression": "CALCULATE(COUNTROWS('Campaign'), REMOVEFILTERS('Campaign'[label]), 'Campaign'[label] IN { 1, 2 })",
+            "formatString": "0",
+            "lineageTag": "710f0a8f-be28-41bd-b534-e75df7b4ffeb"
+          },
+          {
+            "name": "Offer Acceptance Rate",
+            "expression": "DIVIDE([Accepted Records], [Valid Label Records])",
+            "formatString": "0.00%",
+            "lineageTag": "540d25ca-abf2-42a1-8768-00111a43d9a3"
+          },
+          {
+            "name": "Visible Response Records",
+            "expression": "COUNTROWS('Campaign')",
+            "formatString": "0",
+            "lineageTag": "5572c496-d2ce-4f79-af07-af616f128bc1"
+          },
+          {
+            "name": "Missing Rows",
+            "expression": "CALCULATE(COUNTROWS('Campaign'), 'Campaign'[Has Missing Original Field] = TRUE())",
+            "formatString": "0",
+            "lineageTag": "62eee6c4-d1de-4e5c-92bf-1cadc038ba78"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Campaign",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataRoot & \"\\analysis\\data\\raw\\dsc_test_case.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Cleaned = Table.ReplaceValue(Promoted, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Promoted)),",
+                "    Typed = Table.TransformColumnTypes(Cleaned, {",
+                "        {\"campaign_month\", type text}, {\"marital_sta\", type text}, {\"main_occupation\", type text},",
+                "        {\"customer_segment\", type text}, {\"gender\", type text}, {\"have_acc_planet\", type text},",
+                "        {\"have_cc\", type text}, {\"scb_payroll\", type text}, {\"num_children\", Int64.Type},",
+                "        {\"age\", type number}, {\"income\", type number}, {\"maxosdc_last_30d\", type number},",
+                "        {\"dcspend_last_30d\", type number}, {\"easypymt_last_30d\", type number},",
+                "        {\"savacc_bal\", type number}, {\"currentacc_bal\", type number},",
+                "        {\"avg_savaccbal_30d\", type number}, {\"avg_currentaccbal_30d\", type number},",
+                "        {\"mob\", Int64.Type}, {\"inflow30d\", type number}, {\"outflow30d\", type number},",
+                "        {\"inflow1_15\", type number}, {\"outflow1_15\", type number},",
+                "        {\"net_flow_30d\", type number}, {\"net_flow_15d\", type number}, {\"label\", Int64.Type}",
+                "    }),",
+                "    WithMissingFlag = Table.AddColumn(Typed, \"Has Missing Original Field\", each List.AnyTrue(List.Transform(Record.FieldValues(_), each _ = null)), type logical),",
+                "    WithMonthOrder = Table.AddColumn(WithMissingFlag, \"campaign_month_order\", each if [campaign_month] = null then null else List.PositionOf({\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"}, [campaign_month]) + 1, Int64.Type),",
+                "    WithResponseLabel = Table.AddColumn(WithMonthOrder, \"response_label\", each if [label] = 0 then \"Reject Offer\" else if [label] = 1 then \"Accept - PA Insurance\" else if [label] = 2 then \"Accept - Life Insurance\" else \"Unknown\", type text),",
+                "    WithIncomeBand = Table.AddColumn(WithResponseLabel, \"income_band\", each if [income] = null then \"Missing\" else if [income] < 0 then \"Negative (<0)\" else if [income] = 0 then \"Zero (=0)\" else if [income] <= 15000 then \"Positive (0, 15,000]\" else if [income] <= 30000 then \"Positive (15,000, 30,000]\" else if [income] <= 50000 then \"Positive (30,000, 50,000]\" else if [income] <= 100000 then \"Positive (50,000, 100,000]\" else \"Positive (>100,000)\", type text)",
+                "in",
+                "    WithIncomeBand"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

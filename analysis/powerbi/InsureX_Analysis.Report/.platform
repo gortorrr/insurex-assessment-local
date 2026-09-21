@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "InsureX_Analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2a994ee2-53e4-4cfb-9abf-7d2b9f10be9a"
+  }
+}

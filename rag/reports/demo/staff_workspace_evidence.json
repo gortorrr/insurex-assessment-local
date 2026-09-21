@@ -1,0 +1,67 @@
+{
+  "recorded_at": "2026-09-20T10:31:47.602659+00:00",
+  "result": "passed",
+  "automated_tests": {
+    "runner": "unittest discover",
+    "passed": 141,
+    "failed": 0
+  },
+  "browser": {
+    "url": "http://localhost:8513/",
+    "staff_login_workspace_first_paint_ms": 536,
+    "verified": [
+      "SALES WORKSPACE",
+      "customer inbox",
+      "staff reply stored without AI/RAG invocation",
+      "customer view labels reply as demo-staff-a"
+    ],
+    "login_optimization": "Streamlit file watcher disabled to avoid scanning transformers lazy vision modules; cookie persistence runs after visible workspace output"
+  },
+  "accounts": [
+    {
+      "username": "demo-agent-a",
+      "account_role": "customer"
+    },
+    {
+      "username": "demo-agent-b",
+      "account_role": "customer"
+    },
+    {
+      "username": "demo-staff-a",
+      "account_role": "staff"
+    },
+    {
+      "username": "demo-staff-b",
+      "account_role": "staff"
+    }
+  ],
+  "active_sessions": [
+    {
+      "username": "demo-agent-a",
+      "active_sessions": 1
+    },
+    {
+      "username": "demo-agent-b",
+      "active_sessions": 1
+    },
+    {
+      "username": "demo-staff-a",
+      "active_sessions": 0
+    },
+    {
+      "username": "demo-staff-b",
+      "active_sessions": 0
+    }
+  ],
+  "staff_message": [
+    {
+      "sender_type": "staff",
+      "sender_label": "demo-staff-a",
+      "content": "สวัสดีครับ พนักงานขายพร้อมช่วยดูข้อมูลให้ครับ"
+    }
+  ],
+  "lead_refresh_rule": {
+    "threshold_days": 183,
+    "tested": "stale profile starts a new draft while complete lead remains unchanged until validation"
+  }
+}

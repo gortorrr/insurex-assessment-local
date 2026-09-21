@@ -1,0 +1,311 @@
+{
+  "synthetic": true,
+  "agents": [
+    {
+      "agent_id": "SYN-A",
+      "source_kind": "synthetic",
+      "evaluation_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "results": [
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "streaks": [
+        {
+          "month": "2026-01-01",
+          "pass": 0,
+          "fail": 1
+        },
+        {
+          "month": "2026-02-01",
+          "pass": 0,
+          "fail": 2
+        },
+        {
+          "month": "2026-03-01",
+          "pass": 0,
+          "fail": 3
+        },
+        {
+          "month": "2026-04-01",
+          "pass": 0,
+          "fail": 4
+        },
+        {
+          "month": "2026-05-01",
+          "pass": 1,
+          "fail": 0
+        },
+        {
+          "month": "2026-06-01",
+          "pass": 2,
+          "fail": 0
+        },
+        {
+          "month": "2026-07-01",
+          "pass": 3,
+          "fail": 0
+        },
+        {
+          "month": "2026-08-01",
+          "pass": 4,
+          "fail": 0
+        }
+      ],
+      "contract_events": [
+        {
+          "from": "salary",
+          "to": "commission",
+          "effective_from": "2026-04-01",
+          "trigger_month": "2026-03-01"
+        },
+        {
+          "from": "commission",
+          "to": "salary",
+          "effective_from": "2026-08-01",
+          "trigger_month": "2026-07-01"
+        }
+      ],
+      "persisted_event_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "agent_id": "SYN-B",
+      "source_kind": "synthetic",
+      "evaluation_ids": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "results": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "streaks": [
+        {
+          "month": "2026-01-01",
+          "pass": 1,
+          "fail": 0
+        },
+        {
+          "month": "2026-02-01",
+          "pass": 2,
+          "fail": 0
+        },
+        {
+          "month": "2026-03-01",
+          "pass": 3,
+          "fail": 0
+        },
+        {
+          "month": "2026-04-01",
+          "pass": 4,
+          "fail": 0
+        },
+        {
+          "month": "2026-05-01",
+          "pass": 0,
+          "fail": 1
+        },
+        {
+          "month": "2026-06-01",
+          "pass": 0,
+          "fail": 2
+        },
+        {
+          "month": "2026-07-01",
+          "pass": 0,
+          "fail": 3
+        },
+        {
+          "month": "2026-08-01",
+          "pass": 0,
+          "fail": 4
+        }
+      ],
+      "contract_events": [
+        {
+          "from": "commission",
+          "to": "salary",
+          "effective_from": "2026-04-01",
+          "trigger_month": "2026-03-01"
+        },
+        {
+          "from": "salary",
+          "to": "commission",
+          "effective_from": "2026-08-01",
+          "trigger_month": "2026-07-01"
+        }
+      ],
+      "persisted_event_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "agent_id": "SYN-C",
+      "source_kind": "synthetic",
+      "evaluation_ids": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "results": [
+        "PASS",
+        "PASS",
+        "FAIL",
+        "PASS",
+        "PASS",
+        "PASS",
+        "FAIL",
+        "PASS"
+      ],
+      "streaks": [
+        {
+          "month": "2026-01-01",
+          "pass": 1,
+          "fail": 0
+        },
+        {
+          "month": "2026-02-01",
+          "pass": 2,
+          "fail": 0
+        },
+        {
+          "month": "2026-03-01",
+          "pass": 0,
+          "fail": 1
+        },
+        {
+          "month": "2026-04-01",
+          "pass": 1,
+          "fail": 0
+        },
+        {
+          "month": "2026-05-01",
+          "pass": 2,
+          "fail": 0
+        },
+        {
+          "month": "2026-06-01",
+          "pass": 3,
+          "fail": 0
+        },
+        {
+          "month": "2026-07-01",
+          "pass": 0,
+          "fail": 1
+        },
+        {
+          "month": "2026-08-01",
+          "pass": 1,
+          "fail": 0
+        }
+      ],
+      "contract_events": [],
+      "persisted_event_ids": []
+    },
+    {
+      "agent_id": "SYN-D",
+      "source_kind": "synthetic",
+      "evaluation_ids": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "results": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "streaks": [
+        {
+          "month": "2026-01-01",
+          "pass": 1,
+          "fail": 0
+        },
+        {
+          "month": "2026-03-01",
+          "pass": 1,
+          "fail": 0
+        },
+        {
+          "month": "2026-04-01",
+          "pass": 2,
+          "fail": 0
+        },
+        {
+          "month": "2026-05-01",
+          "pass": 3,
+          "fail": 0
+        },
+        {
+          "month": "2026-06-01",
+          "pass": 0,
+          "fail": 1
+        },
+        {
+          "month": "2026-07-01",
+          "pass": 0,
+          "fail": 2
+        },
+        {
+          "month": "2026-08-01",
+          "pass": 0,
+          "fail": 3
+        }
+      ],
+      "contract_events": [
+        {
+          "from": "salary",
+          "to": "commission",
+          "effective_from": "2026-09-01",
+          "trigger_month": "2026-08-01"
+        }
+      ],
+      "persisted_event_ids": [
+        5
+      ]
+    }
+  ]
+}

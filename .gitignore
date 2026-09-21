@@ -1,0 +1,47 @@
+# Python environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Runtime output
+rag/traces/
+*.log
+tmp/
+
+# Generated distribution
+dist/
+
+# Generated RAG vector index
+rag/chroma_db/
+
+# Runtime SQLite databases
+db/*.sqlite
+db/*.sqlite-*
+rag/db/*.sqlite
+rag/db/*.sqlite-*
+data_modeling/db/*.sqlite
+data_modeling/db/*.sqlite-*
+
+# Keep the synthetic KPI demo database in the submission
+!data_modeling/db/analytics.sqlite
+
+# Prevent accidental PII evidence files at any depth
+rag/reports/demo/**/*pii*
+
+# Jupyter runtime files
+analysis/notebooks/.ipynb_checkpoints/
+
+# Power BI local cache
+analysis/powerbi/**/.pbi/
+analysis/powerbi/**/cache.abf
+tmp/PBI-Inspector/

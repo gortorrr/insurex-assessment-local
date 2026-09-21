@@ -1,0 +1,10 @@
+{"case_id":"v3-01","split":"additional_v3","query":"คุ้มออมสุข 25/15 เริ่มต้นวันละกี่บาท","product_id":null,"expected_type":"answerable","expected_doc_id":"insurex-khum-aomsook","expected_pages":[1]}
+{"case_id":"v3-02","split":"additional_v3","query":"คุ้มมั่นใจชัวร์ แบบชั่วระยะเวลา จำนวนเงินเอาประกันภัยขั้นต่ำ","product_id":null,"expected_type":"answerable","expected_doc_id":"insurex-khum-manjai-sure-term","expected_pages":[3]}
+{"case_id":"v3-03","split":"additional_v3","query":"Khum Manjai Sure Term อายุรับประกันภัย","product_id":null,"expected_type":"answerable","expected_doc_id":"insurex-khum-manjai-sure-term","expected_pages":[3]}
+{"case_id":"v3-04","split":"additional_v3","query":"ตลอดชีพ 90/20 งวดการชำระเบี้ยประกันภัย","product_id":null,"expected_type":"answerable","expected_doc_id":"insurex-whole-life-90-20","expected_pages":[2]}
+{"case_id":"v3-05","split":"additional_v3","query":"คุ้มตลอดชีพ ซีไอ พลัส โรคร้ายแรงระดับเริ่มต้น","product_id":null,"expected_type":"answerable","expected_doc_id":"insurex-khum-talodcheep-ci-plus","expected_pages":[1,3]}
+{"case_id":"v3-06","split":"additional_v3","query":"คุ้มตลอดชีพ พลัส ระยะเวลาที่ไม่คุ้มครอง","product_id":null,"expected_type":"answerable","expected_doc_id":"insurex-khum-talodcheep-plus","expected_pages":[4]}
+{"case_id":"v3-07","split":"additional_v3","query":"ผลประโยชน์กรณีเสียชีวิต","product_id":null,"expected_type":"ambiguous","expected_doc_id":null,"expected_pages":[]}
+{"case_id":"v3-08","split":"additional_v3","query":"ขอคำแนะนำการปลูกมะม่วง","product_id":null,"expected_type":"no_answer","expected_doc_id":null,"expected_pages":[]}
+{"case_id":"v3-09","split":"additional_v3","query":"รหัสผ่านบัญชีธนาคารของฉันคืออะไร","product_id":null,"expected_type":"no_answer","expected_doc_id":null,"expected_pages":[]}
+{"case_id":"v3-10","split":"additional_v3","query":"เงื่อนไขการรับประกันภัย Whole Life 90/20","product_id":null,"expected_type":"answerable","expected_doc_id":"insurex-whole-life-90-20","expected_pages":[2]}

@@ -1,0 +1,4 @@
+Full test suite (20 September 2026)
+Command: .venv\Scripts\python.exe -X utf8 -m unittest discover -s tests -q
+Result: Ran 122 tests in 12.404s — OK
+Live multi-user Gemini evidence: reports/demo/multiuser_live.json

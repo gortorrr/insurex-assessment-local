@@ -1,0 +1,26 @@
+{
+  "url": "http://localhost:8513/",
+  "username": "demo-agent-a",
+  "round_count": 2,
+  "new_chat_each_round": true,
+  "passed_rounds": 2,
+  "passed": true,
+  "rounds": [
+    {
+      "round": 1,
+      "question": "ผลิตภัณฑ์ คุ้มออมสุข มีรายละเอียดเรื่องการออมอย่างไรบ้าง",
+      "answer": "smart_toy\nแผนคุ้มออมสุข\n\nแผนคุ้มออมสุขช่วยเปลี่ยนค่าใช้จ่ายเป็นเงินออมก้อนโตเพื่อเติมฝัน พร้อมหลักประกันความคุ้มครองชีวิต โดยมีรายละเอียดเรื่องการออมดังนี้\n\nเริ่มต้นเก็บเงิน: เริ่มต้นเก็บเงินเพียงวันละ 30 บาท\nคุ้มค่าเงินออม: ด้วยเงินคืน 1% ของจํานวนเงินเอาประกันภัย ตั้งแต่สิ้นปีกรมธรรม์ที่ 1-24\nคุ้มออมสุขเร็วยิ่งขึ้น: ด้วยเงินก้อนโตขึ้นถึง 150% ของจํานวนเงินเอาประกันภัย\nการลดหย่อนภาษี: เงินออมสามารถนําไปใช้ลดหย่อนภาษี\n\nSources\n\ninsurex-khum-aomsook p.1 official source\ninsurex-khum-aomsook p.2 official source",
+      "citation_links": 3,
+      "messages_before_question": 0,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "question": "ผลิตภัณฑ์คุ้มออมสุข 25/15 มีวิธีการชำระเงินอย่างไร",
+      "answer": "smart_toy\nวิธีการชำระเบี้ยประกันภัย\n\nผลิตภัณฑ์คุ้มออมสุข 25/15 มีวิธีการชำระเบี้ยประกันภัยดังนี้\n\nการชำระเบี้ยประกันภัย: สามารถชำระได้แบบรายปี ราย 6 เดือน ราย 3 เดือน หรือรายเดือน\n\nSources\n\ninsurex-khum-aomsook p.2 official source",
+      "citation_links": 2,
+      "messages_before_question": 0,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[theme]
+base = "light"
+primaryColor = "#63388a"
+backgroundColor = "#faf8f4"
+secondaryBackgroundColor = "#eee7f5"
+textColor = "#291a40"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# Keep Streamlit's deploy/menu chrome out of the product workspace.  The app
+# renders its own account state and loading dialog instead.
+toolbarMode = "minimal"
+
+[server]
+address = "127.0.0.1"
+# Transformers exposes hundreds of lazy optional modules. Streamlit's source
+# watcher probes them during reruns and can add seconds plus noisy torchvision
+# import errors even though this text-only app does not use vision models.
+fileWatcherType = "none"
+runOnSave = false

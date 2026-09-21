@@ -1,0 +1,24 @@
+{
+  "status": "blocked_pending_corpus_review",
+  "required_document_count": 5,
+  "documents": [
+    {
+      "doc_id": "replace-with-verified-id",
+      "product_id": "replace-with-verified-product-id",
+      "product_name": "replace-with-verified-product-name",
+      "category": "replace-with-category",
+      "source_page_url": "https://replace-with-current-product-page",
+      "pdf_url": "https://replace-with-current-pdf-url",
+      "publisher": "InsureX",
+      "retrieved_at": "YYYY-MM-DDTHH:MM:SSZ",
+      "document_date": null,
+      "sha256": "",
+      "page_count": null,
+      "language": "th",
+      "extraction_status": "not_checked",
+      "local_path": "knowledge_base/verified-document.pdf",
+      "redistribution_note": "Check source terms before bundling."
+    }
+  ]
+}
+

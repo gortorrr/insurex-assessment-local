@@ -1,0 +1,13 @@
+2026-09-20 20:57:13.419 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-20 20:57:13.426 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-20 20:57:13.431 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-20 20:57:13.434 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-20 20:57:13.440 No runtime found, using MemoryCacheStorageManager
+2026-09-20 20:57:21.674 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+E:\insurex-assessment-local\.venv\Lib\site-packages\streamlit\time_util.py:73: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  seconds: float = pd.Timedelta(t).total_seconds()
+2026-09-20 20:57:23.647 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+----------------------------------------------------------------------
+Ran 146 tests in 15.567s
+
+OK

@@ -1,0 +1,980 @@
+{
+  "executed_at": "2026-09-19T16:50:59.692168+00:00",
+  "note": "Paired local retrieval evaluation, not blinded and not answer accuracy.",
+  "modes": {
+    "semantic": {
+      "passed": 60,
+      "total": 60,
+      "mean_retrieval_ms": 91.84,
+      "results": [
+        {
+          "case_id": "dev-01",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 90.79
+        },
+        {
+          "case_id": "dev-02",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 106.34
+        },
+        {
+          "case_id": "dev-03",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 105.81
+        },
+        {
+          "case_id": "dev-04",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 127.95
+        },
+        {
+          "case_id": "dev-05",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 93.24
+        },
+        {
+          "case_id": "dev-06",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 104.86
+        },
+        {
+          "case_id": "dev-07",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 95.89
+        },
+        {
+          "case_id": "dev-08",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 81.21
+        },
+        {
+          "case_id": "dev-09",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 89.72
+        },
+        {
+          "case_id": "dev-10",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 102.89
+        },
+        {
+          "case_id": "heldout-01",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 109.26
+        },
+        {
+          "case_id": "heldout-02",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 108.43
+        },
+        {
+          "case_id": "heldout-03",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 116.08
+        },
+        {
+          "case_id": "heldout-04",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 108.92
+        },
+        {
+          "case_id": "heldout-05",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 91.16
+        },
+        {
+          "case_id": "heldout-06",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 100.38
+        },
+        {
+          "case_id": "heldout-07",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 108.32
+        },
+        {
+          "case_id": "heldout-08",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 99.84
+        },
+        {
+          "case_id": "heldout-09",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 107.14
+        },
+        {
+          "case_id": "heldout-10",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 91.86
+        },
+        {
+          "case_id": "heldout-11",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 97.19
+        },
+        {
+          "case_id": "heldout-12",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 96.07
+        },
+        {
+          "case_id": "heldout-13",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 97.09
+        },
+        {
+          "case_id": "heldout-14",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 107.81
+        },
+        {
+          "case_id": "heldout-15",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 79.86
+        },
+        {
+          "case_id": "heldout-16",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "ambiguous",
+          "retrieval_ms": 86.48
+        },
+        {
+          "case_id": "heldout-17",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 89.51
+        },
+        {
+          "case_id": "heldout-18",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 74.08
+        },
+        {
+          "case_id": "heldout-19",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 88.75
+        },
+        {
+          "case_id": "heldout-20",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 79.97
+        },
+        {
+          "case_id": "v2-01",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 71.42
+        },
+        {
+          "case_id": "v2-02",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 90.2
+        },
+        {
+          "case_id": "v2-03",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 81.5
+        },
+        {
+          "case_id": "v2-04",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 91.53
+        },
+        {
+          "case_id": "v2-05",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 82.4
+        },
+        {
+          "case_id": "v2-06",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 4,
+          "status": "sufficient",
+          "retrieval_ms": 72.94
+        },
+        {
+          "case_id": "v2-07",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 76.46
+        },
+        {
+          "case_id": "v2-08",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 78.81
+        },
+        {
+          "case_id": "v2-09",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 87.14
+        },
+        {
+          "case_id": "v2-10",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 103.67
+        },
+        {
+          "case_id": "v2-11",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 84.39
+        },
+        {
+          "case_id": "v2-12",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 79.78
+        },
+        {
+          "case_id": "v2-13",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 85.61
+        },
+        {
+          "case_id": "v2-14",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 77.48
+        },
+        {
+          "case_id": "v2-15",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 95.48
+        },
+        {
+          "case_id": "v2-16",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 99.29
+        },
+        {
+          "case_id": "v2-17",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "ambiguous",
+          "retrieval_ms": 81.93
+        },
+        {
+          "case_id": "v2-18",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 83.7
+        },
+        {
+          "case_id": "v2-19",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 97.12
+        },
+        {
+          "case_id": "v2-20",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 98.62
+        },
+        {
+          "case_id": "v3-01",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 102.7
+        },
+        {
+          "case_id": "v3-02",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 92.37
+        },
+        {
+          "case_id": "v3-03",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 95.02
+        },
+        {
+          "case_id": "v3-04",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 82.25
+        },
+        {
+          "case_id": "v3-05",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 84.59
+        },
+        {
+          "case_id": "v3-06",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 80.4
+        },
+        {
+          "case_id": "v3-07",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "ambiguous",
+          "retrieval_ms": 83.92
+        },
+        {
+          "case_id": "v3-08",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 73.74
+        },
+        {
+          "case_id": "v3-09",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 71.6
+        },
+        {
+          "case_id": "v3-10",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 87.41
+        }
+      ]
+    },
+    "hybrid": {
+      "passed": 60,
+      "total": 60,
+      "mean_retrieval_ms": 135.95,
+      "results": [
+        {
+          "case_id": "dev-01",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 104.32
+        },
+        {
+          "case_id": "dev-02",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 96.19
+        },
+        {
+          "case_id": "dev-03",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 94.61
+        },
+        {
+          "case_id": "dev-04",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 87.17
+        },
+        {
+          "case_id": "dev-05",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 92.34
+        },
+        {
+          "case_id": "dev-06",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 83.39
+        },
+        {
+          "case_id": "dev-07",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 80.93
+        },
+        {
+          "case_id": "dev-08",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 80.71
+        },
+        {
+          "case_id": "dev-09",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 86.87
+        },
+        {
+          "case_id": "dev-10",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 95.2
+        },
+        {
+          "case_id": "heldout-01",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 108.4
+        },
+        {
+          "case_id": "heldout-02",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 92.94
+        },
+        {
+          "case_id": "heldout-03",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 116.04
+        },
+        {
+          "case_id": "heldout-04",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 503.5
+        },
+        {
+          "case_id": "heldout-05",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 134.5
+        },
+        {
+          "case_id": "heldout-06",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 487.44
+        },
+        {
+          "case_id": "heldout-07",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 134.03
+        },
+        {
+          "case_id": "heldout-08",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 151.46
+        },
+        {
+          "case_id": "heldout-09",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 141.85
+        },
+        {
+          "case_id": "heldout-10",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 154.83
+        },
+        {
+          "case_id": "heldout-11",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 158.38
+        },
+        {
+          "case_id": "heldout-12",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 164.68
+        },
+        {
+          "case_id": "heldout-13",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 222.58
+        },
+        {
+          "case_id": "heldout-14",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 266.13
+        },
+        {
+          "case_id": "heldout-15",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 300.74
+        },
+        {
+          "case_id": "heldout-16",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "ambiguous",
+          "retrieval_ms": 177.9
+        },
+        {
+          "case_id": "heldout-17",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 182.51
+        },
+        {
+          "case_id": "heldout-18",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 180.03
+        },
+        {
+          "case_id": "heldout-19",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 180.21
+        },
+        {
+          "case_id": "heldout-20",
+          "dataset": "rag_cases.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 252.48
+        },
+        {
+          "case_id": "v2-01",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 140.32
+        },
+        {
+          "case_id": "v2-02",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 128.48
+        },
+        {
+          "case_id": "v2-03",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 115.68
+        },
+        {
+          "case_id": "v2-04",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 107.15
+        },
+        {
+          "case_id": "v2-05",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 111.11
+        },
+        {
+          "case_id": "v2-06",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 96.98
+        },
+        {
+          "case_id": "v2-07",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 95.02
+        },
+        {
+          "case_id": "v2-08",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 101.89
+        },
+        {
+          "case_id": "v2-09",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 89.26
+        },
+        {
+          "case_id": "v2-10",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 88.17
+        },
+        {
+          "case_id": "v2-11",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 91.73
+        },
+        {
+          "case_id": "v2-12",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 95.08
+        },
+        {
+          "case_id": "v2-13",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 108.98
+        },
+        {
+          "case_id": "v2-14",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 81.1
+        },
+        {
+          "case_id": "v2-15",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 99.15
+        },
+        {
+          "case_id": "v2-16",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 96.52
+        },
+        {
+          "case_id": "v2-17",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "ambiguous",
+          "retrieval_ms": 115.54
+        },
+        {
+          "case_id": "v2-18",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 152.67
+        },
+        {
+          "case_id": "v2-19",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 141.47
+        },
+        {
+          "case_id": "v2-20",
+          "dataset": "rag_cases_heldout_v2.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 103.78
+        },
+        {
+          "case_id": "v3-01",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 98.86
+        },
+        {
+          "case_id": "v3-02",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 88.86
+        },
+        {
+          "case_id": "v3-03",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 90.07
+        },
+        {
+          "case_id": "v3-04",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 93.41
+        },
+        {
+          "case_id": "v3-05",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 1,
+          "status": "sufficient",
+          "retrieval_ms": 98.87
+        },
+        {
+          "case_id": "v3-06",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 3,
+          "status": "sufficient",
+          "retrieval_ms": 105.03
+        },
+        {
+          "case_id": "v3-07",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "ambiguous",
+          "retrieval_ms": 109.63
+        },
+        {
+          "case_id": "v3-08",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 102.3
+        },
+        {
+          "case_id": "v3-09",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": null,
+          "status": "insufficient",
+          "retrieval_ms": 109.1
+        },
+        {
+          "case_id": "v3-10",
+          "dataset": "rag_cases_additional_v3.jsonl",
+          "passed": true,
+          "rank": 2,
+          "status": "sufficient",
+          "retrieval_ms": 88.39
+        }
+      ]
+    }
+  }
+}

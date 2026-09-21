@@ -1,0 +1,64 @@
+{
+  "run_id": "301b71f95a734b69",
+  "started_at": "2026-09-19T12:09:59.875592+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "executed": true,
+  "passed": true,
+  "failed": false,
+  "skipped": false,
+  "requests": 1,
+  "failed_attempts": 0,
+  "usage": [
+    {
+      "input_tokens": 3089,
+      "output_tokens": 338,
+      "total_tokens": 3427,
+      "input_token_details": {
+        "cache_read": 0
+      }
+    }
+  ],
+  "corpus": {
+    "manifest_sha256": "b8661f89e50add2a241f47480d6cfe85ea3b2953e4637f743a07edf9535b28d7",
+    "embedding_manifest_sha256": "a91103a7603dc3060347d1f80091ef56217e85cf1d11b2a0e4f4549687549808",
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "chroma_path": "chroma_db",
+    "product_id": "khum-talodcheep-ci-plus",
+    "retrieval_top_k": "5",
+    "chunking": "max_characters=1800,overlap=240,max_tokens=400,revision=paragraph-boundary-v4",
+    "fingerprint": "198e6245a3fad6a323df0b5a4e31b0c30326890ee2e5082a76fe5e913f1a5885"
+  },
+  "status": "passed",
+  "assertions": {
+    "answerable_has_text": true,
+    "answerable_has_citations": true,
+    "answerable_citations_have_pdf_urls": true,
+    "no_answer_is_controlled": true,
+    "no_answer_has_no_citations": true,
+    "no_answer_is_not_service_error": true
+  },
+  "answerable": {
+    "answer": "แบบประกันคุ้มครองนานถึงอายุ 90 ปี และจะได้รับเงินก้อนครบกำหนดสัญญา ณ วันครบรอบปีกรมธรรม์ที่ผู้เอาประกันภัยมีอายุครบ 90 ปี",
+    "citations": [
+      {
+        "doc_id": "insurex-khum-talodcheep-ci-plus",
+        "page": 1,
+        "chunk_id": "insurex-khum-talodcheep-ci-plus-p1-c2",
+        "source_url": "https://cdn.scbprotect.co.th/11_SCB-InsureX_Khum-Talodcheep-CI-Plus_90-5_90-10_90-20_180669.pdf"
+      },
+      {
+        "doc_id": "insurex-khum-talodcheep-ci-plus",
+        "page": 2,
+        "chunk_id": "insurex-khum-talodcheep-ci-plus-p2-c0",
+        "source_url": "https://cdn.scbprotect.co.th/11_SCB-InsureX_Khum-Talodcheep-CI-Plus_90-5_90-10_90-20_180669.pdf"
+      }
+    ],
+    "evidence_status": "sufficient"
+  },
+  "no_answer": {
+    "answer": "ไม่พบข้อมูลนี้ในเอกสารผลิตภัณฑ์ที่ระบบมี",
+    "citations": [],
+    "evidence_status": "insufficient",
+    "error_code": null
+  }
+}

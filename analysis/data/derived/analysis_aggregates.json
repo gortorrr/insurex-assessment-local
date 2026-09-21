@@ -1,0 +1,565 @@
+{
+  "overall": {
+    "records": 215993,
+    "valid_label_records": 215993,
+    "accepted_records": 2622,
+    "offer_acceptance_rate": 0.012139282291555744,
+    "pa_count": 1634,
+    "life_count": 988,
+    "reject_count": 213371,
+    "pa_share_of_accepted": 0.6231884057971014,
+    "life_share_of_accepted": 0.37681159420289856
+  },
+  "groups": {
+    "campaign_month": [
+      {
+        "group": "Mar",
+        "records": 21937,
+        "valid_label_records": 21937,
+        "accepted_records": 186,
+        "acceptance_rate": 0.008478825728221727,
+        "pa_count": 70,
+        "life_count": 116
+      },
+      {
+        "group": "Jul",
+        "records": 11242,
+        "valid_label_records": 11242,
+        "accepted_records": 214,
+        "acceptance_rate": 0.01903575876178616,
+        "pa_count": 137,
+        "life_count": 77
+      },
+      {
+        "group": "Jan",
+        "records": 22282,
+        "valid_label_records": 22282,
+        "accepted_records": 289,
+        "acceptance_rate": 0.012970110403015888,
+        "pa_count": 166,
+        "life_count": 123
+      },
+      {
+        "group": "Nov",
+        "records": 22001,
+        "valid_label_records": 22001,
+        "accepted_records": 207,
+        "acceptance_rate": 0.009408663242579883,
+        "pa_count": 131,
+        "life_count": 76
+      },
+      {
+        "group": "Oct",
+        "records": 23625,
+        "valid_label_records": 23625,
+        "accepted_records": 252,
+        "acceptance_rate": 0.010666666666666666,
+        "pa_count": 186,
+        "life_count": 66
+      },
+      {
+        "group": "Sep",
+        "records": 11210,
+        "valid_label_records": 11210,
+        "accepted_records": 212,
+        "acceptance_rate": 0.018911685994647636,
+        "pa_count": 131,
+        "life_count": 81
+      },
+      {
+        "group": "Apr",
+        "records": 21933,
+        "valid_label_records": 21933,
+        "accepted_records": 240,
+        "acceptance_rate": 0.010942415538230063,
+        "pa_count": 138,
+        "life_count": 102
+      },
+      {
+        "group": "Jun",
+        "records": 10179,
+        "valid_label_records": 10179,
+        "accepted_records": 178,
+        "acceptance_rate": 0.017486983004224382,
+        "pa_count": 133,
+        "life_count": 45
+      },
+      {
+        "group": "Dec",
+        "records": 23541,
+        "valid_label_records": 23541,
+        "accepted_records": 269,
+        "acceptance_rate": 0.011426872265409286,
+        "pa_count": 178,
+        "life_count": 91
+      },
+      {
+        "group": "Feb",
+        "records": 22264,
+        "valid_label_records": 22264,
+        "accepted_records": 178,
+        "acceptance_rate": 0.00799496945742005,
+        "pa_count": 63,
+        "life_count": 115
+      },
+      {
+        "group": "Aug",
+        "records": 11107,
+        "valid_label_records": 11107,
+        "accepted_records": 217,
+        "acceptance_rate": 0.019537228774646618,
+        "pa_count": 165,
+        "life_count": 52
+      },
+      {
+        "group": "May",
+        "records": 14672,
+        "valid_label_records": 14672,
+        "accepted_records": 180,
+        "acceptance_rate": 0.012268266085059978,
+        "pa_count": 136,
+        "life_count": 44
+      }
+    ],
+    "customer_segment": [
+      {
+        "group": "Lower Mass",
+        "records": 105309,
+        "valid_label_records": 105309,
+        "accepted_records": 1329,
+        "acceptance_rate": 0.012620003988263111,
+        "pa_count": 934,
+        "life_count": 395
+      },
+      {
+        "group": "Mass",
+        "records": 97738,
+        "valid_label_records": 97738,
+        "accepted_records": 1153,
+        "acceptance_rate": 0.011796844625427162,
+        "pa_count": 638,
+        "life_count": 515
+      },
+      {
+        "group": "Upper Mass",
+        "records": 11446,
+        "valid_label_records": 11446,
+        "accepted_records": 139,
+        "acceptance_rate": 0.012143980429844487,
+        "pa_count": 61,
+        "life_count": 78
+      },
+      {
+        "group": "Unknown",
+        "records": 1500,
+        "valid_label_records": 1500,
+        "accepted_records": 1,
+        "acceptance_rate": 0.0006666666666666666,
+        "pa_count": 1,
+        "life_count": 0
+      }
+    ],
+    "main_occupation": [
+      {
+        "group": "Salary man",
+        "records": 102885,
+        "valid_label_records": 102885,
+        "accepted_records": 1245,
+        "acceptance_rate": 0.012100889342469747,
+        "pa_count": 794,
+        "life_count": 451
+      },
+      {
+        "group": "Self-employed",
+        "records": 56359,
+        "valid_label_records": 56359,
+        "accepted_records": 677,
+        "acceptance_rate": 0.012012278429354673,
+        "pa_count": 414,
+        "life_count": 263
+      },
+      {
+        "group": "Freelance",
+        "records": 19070,
+        "valid_label_records": 19070,
+        "accepted_records": 250,
+        "acceptance_rate": 0.013109596224436287,
+        "pa_count": 187,
+        "life_count": 63
+      },
+      {
+        "group": "Housewife",
+        "records": 4249,
+        "valid_label_records": 4249,
+        "accepted_records": 41,
+        "acceptance_rate": 0.009649329253942103,
+        "pa_count": 30,
+        "life_count": 11
+      },
+      {
+        "group": "Student",
+        "records": 17295,
+        "valid_label_records": 17295,
+        "accepted_records": 279,
+        "acceptance_rate": 0.016131830008673027,
+        "pa_count": 137,
+        "life_count": 142
+      },
+      {
+        "group": "Professional",
+        "records": 1412,
+        "valid_label_records": 1412,
+        "accepted_records": 12,
+        "acceptance_rate": 0.0084985835694051,
+        "pa_count": 5,
+        "life_count": 7
+      },
+      {
+        "group": "Unemployed",
+        "records": 6857,
+        "valid_label_records": 6857,
+        "accepted_records": 77,
+        "acceptance_rate": 0.011229400612512761,
+        "pa_count": 43,
+        "life_count": 34
+      },
+      {
+        "group": "Government",
+        "records": 6063,
+        "valid_label_records": 6063,
+        "accepted_records": 35,
+        "acceptance_rate": 0.005772719775688603,
+        "pa_count": 20,
+        "life_count": 15
+      },
+      {
+        "group": "Unknown",
+        "records": 1500,
+        "valid_label_records": 1500,
+        "accepted_records": 1,
+        "acceptance_rate": 0.0006666666666666666,
+        "pa_count": 1,
+        "life_count": 0
+      },
+      {
+        "group": "Other/Unknown",
+        "records": 59,
+        "valid_label_records": 59,
+        "accepted_records": 0,
+        "acceptance_rate": 0.0,
+        "pa_count": 0,
+        "life_count": 0
+      },
+      {
+        "group": "Entertainer",
+        "records": 244,
+        "valid_label_records": 244,
+        "accepted_records": 5,
+        "acceptance_rate": 0.020491803278688523,
+        "pa_count": 3,
+        "life_count": 2
+      }
+    ],
+    "gender": [
+      {
+        "group": "Female",
+        "records": 121275,
+        "valid_label_records": 121275,
+        "accepted_records": 1300,
+        "acceptance_rate": 0.010719439290867862,
+        "pa_count": 724,
+        "life_count": 576
+      },
+      {
+        "group": "Male",
+        "records": 93218,
+        "valid_label_records": 93218,
+        "accepted_records": 1321,
+        "acceptance_rate": 0.014171082838078483,
+        "pa_count": 909,
+        "life_count": 412
+      },
+      {
+        "group": "Unknown",
+        "records": 1500,
+        "valid_label_records": 1500,
+        "accepted_records": 1,
+        "acceptance_rate": 0.0006666666666666666,
+        "pa_count": 1,
+        "life_count": 0
+      }
+    ],
+    "age_band": [
+      {
+        "group": "40-49",
+        "records": 53522,
+        "valid_label_records": 53522,
+        "accepted_records": 537,
+        "acceptance_rate": 0.010033257352116886,
+        "pa_count": 367,
+        "life_count": 170
+      },
+      {
+        "group": "30-39",
+        "records": 77393,
+        "valid_label_records": 77393,
+        "accepted_records": 867,
+        "acceptance_rate": 0.011202563539338182,
+        "pa_count": 483,
+        "life_count": 384
+      },
+      {
+        "group": "<30",
+        "records": 52182,
+        "valid_label_records": 52182,
+        "accepted_records": 915,
+        "acceptance_rate": 0.01753478210877314,
+        "pa_count": 556,
+        "life_count": 359
+      },
+      {
+        "group": "50-59",
+        "records": 29413,
+        "valid_label_records": 29413,
+        "accepted_records": 286,
+        "acceptance_rate": 0.009723591609152416,
+        "pa_count": 215,
+        "life_count": 71
+      },
+      {
+        "group": "Unknown",
+        "records": 1500,
+        "valid_label_records": 1500,
+        "accepted_records": 1,
+        "acceptance_rate": 0.0006666666666666666,
+        "pa_count": 1,
+        "life_count": 0
+      },
+      {
+        "group": "60+",
+        "records": 1983,
+        "valid_label_records": 1983,
+        "accepted_records": 16,
+        "acceptance_rate": 0.008068582955118508,
+        "pa_count": 12,
+        "life_count": 4
+      }
+    ],
+    "income_band": [
+      {
+        "group": "Positive (0, 15,000]",
+        "records": 121000,
+        "valid_label_records": 121000,
+        "accepted_records": 1482,
+        "acceptance_rate": 0.012247933884297521,
+        "pa_count": 996,
+        "life_count": 486
+      },
+      {
+        "group": "Positive (15,000, 30,000]",
+        "records": 60987,
+        "valid_label_records": 60987,
+        "accepted_records": 738,
+        "acceptance_rate": 0.01210093954449309,
+        "pa_count": 452,
+        "life_count": 286
+      },
+      {
+        "group": "Positive (50,000, 100,000]",
+        "records": 9717,
+        "valid_label_records": 9717,
+        "accepted_records": 125,
+        "acceptance_rate": 0.012864052691159823,
+        "pa_count": 53,
+        "life_count": 72
+      },
+      {
+        "group": "Positive (30,000, 50,000]",
+        "records": 19321,
+        "valid_label_records": 19321,
+        "accepted_records": 236,
+        "acceptance_rate": 0.012214688680710108,
+        "pa_count": 106,
+        "life_count": 130
+      },
+      {
+        "group": "Missing",
+        "records": 2401,
+        "valid_label_records": 2401,
+        "accepted_records": 6,
+        "acceptance_rate": 0.0024989587671803417,
+        "pa_count": 1,
+        "life_count": 5
+      },
+      {
+        "group": "Positive (>100,000)",
+        "records": 2225,
+        "valid_label_records": 2225,
+        "accepted_records": 31,
+        "acceptance_rate": 0.013932584269662922,
+        "pa_count": 23,
+        "life_count": 8
+      },
+      {
+        "group": "Zero (=0)",
+        "records": 342,
+        "valid_label_records": 342,
+        "accepted_records": 4,
+        "acceptance_rate": 0.011695906432748537,
+        "pa_count": 3,
+        "life_count": 1
+      }
+    ]
+  },
+  "financial_summary": {
+    "income": {
+      "count": 213592,
+      "median": 12252.61,
+      "q1": 4364.98,
+      "q3": 21166.5875,
+      "min": 0.0,
+      "max": 199625.67,
+      "zero_count": 342,
+      "negative_count": 0
+    },
+    "maxosdc_last_30d": {
+      "count": 213592,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 4037.855,
+      "min": 0.0,
+      "max": 4374289.15,
+      "zero_count": 128422,
+      "negative_count": 0
+    },
+    "dcspend_last_30d": {
+      "count": 213592,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "min": -87030.88,
+      "max": 1852987.91,
+      "zero_count": 207065,
+      "negative_count": 17
+    },
+    "easypymt_last_30d": {
+      "count": 213592,
+      "median": 373.0,
+      "q1": 88.0,
+      "q3": 925.0,
+      "min": 0.0,
+      "max": 2000000.0,
+      "zero_count": 45616,
+      "negative_count": 0
+    },
+    "savacc_bal": {
+      "count": 213592,
+      "median": 800.655,
+      "q1": 7.35,
+      "q3": 7557.887500000001,
+      "min": 0.0,
+      "max": 4793828.33,
+      "zero_count": 22235,
+      "negative_count": 0
+    },
+    "currentacc_bal": {
+      "count": 213592,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "min": 0.0,
+      "max": 1.0,
+      "zero_count": 213332,
+      "negative_count": 0
+    },
+    "avg_savaccbal_30d": {
+      "count": 213592,
+      "median": 992.9200000000001,
+      "q1": 122.92,
+      "q3": 4643.6224999999995,
+      "min": 0.0,
+      "max": 2471112.58,
+      "zero_count": 15814,
+      "negative_count": 0
+    },
+    "avg_currentaccbal_30d": {
+      "count": 213592,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "min": 0.0,
+      "max": 1232520.06,
+      "zero_count": 213413,
+      "negative_count": 0
+    },
+    "inflow30d": {
+      "count": 213592,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 16907.49,
+      "min": 0.0,
+      "max": 21471692.25,
+      "zero_count": 110005,
+      "negative_count": 0
+    },
+    "outflow30d": {
+      "count": 213592,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 18290.0,
+      "min": 0.0,
+      "max": 21471691.0,
+      "zero_count": 110963,
+      "negative_count": 0
+    },
+    "net_flow_30d": {
+      "count": 213592,
+      "median": 0.0,
+      "q1": -0.16,
+      "q3": 0.0,
+      "min": -1813780.11,
+      "max": 2295697.16,
+      "zero_count": 113336,
+      "negative_count": 53850
+    }
+  },
+  "quality_checks": {
+    "negative_dcspend": 17,
+    "pair_equal_counts": {
+      "inflow30d=inflow1_15": 213592,
+      "outflow30d=outflow1_15": 213592,
+      "net_flow_30d=net_flow_15d": 213592
+    },
+    "pair_shared_missing_counts": {
+      "inflow30d=inflow1_15": 2401,
+      "outflow30d=outflow1_15": 2401,
+      "net_flow_30d=net_flow_15d": 2401
+    },
+    "pair_equal_including_shared_missing_counts": {
+      "inflow30d=inflow1_15": 215993,
+      "outflow30d=outflow1_15": 215993,
+      "net_flow_30d=net_flow_15d": 215993
+    },
+    "pair_non_null_mismatch_counts": {
+      "inflow30d=inflow1_15": 0,
+      "outflow30d=outflow1_15": 0,
+      "net_flow_30d=net_flow_15d": 0
+    },
+    "net_flow_mismatch_counts": {
+      "net_flow_30d": 0,
+      "net_flow_15d": 0
+    }
+  },
+  "sensitivity": {
+    "exact_deduplicated": {
+      "records": 213820,
+      "valid_label_records": 213820,
+      "accepted_records": 2622,
+      "offer_acceptance_rate": 0.012262650827799083,
+      "pa_count": 1634,
+      "life_count": 988,
+      "reject_count": 211198
+    },
+    "removed_excess_rows": 2173
+  }
+}

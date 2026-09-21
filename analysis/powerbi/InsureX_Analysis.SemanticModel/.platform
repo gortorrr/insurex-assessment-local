@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "InsureX_Analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c7fba3ca-41ba-4c2e-a8a3-53be2b2eb6b4"
+  }
+}
