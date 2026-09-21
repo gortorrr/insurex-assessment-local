@@ -1,4 +1,4 @@
-# Relational model — Test Case #1 KPI
+# Relational model - Test Case #1 KPI
 
 ไฟล์นี้อธิบาย Data Modeling/KPI.
 
