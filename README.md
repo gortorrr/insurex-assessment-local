@@ -1,6 +1,6 @@
-# InsureX Assessment
+# Test Case AI Data Science
 
-เป็น Repo สำหรับส่งงาน assessment
+เป็น Repo สำหรับส่ง Test Case
 
 ## ขอบเขตข้อมูล
 
